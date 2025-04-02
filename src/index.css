@@ -7,12 +7,13 @@
   --text-primary: #f2f9fe;
   --text-secondary: #dcdcdc;
   --text-accent: #4e5261;
-  --border-radius: 12px;
+  --border-radius: 16px;
 }
 
 @layer base {
   html {
     font-family: var(--font-jakarta);
+    overflow-y: scroll; /* Always show scrollbar */
   }
 
   body {
@@ -31,4 +32,10 @@
 }
 
 @layer components {
+  .btn-primary {
+  }
+
+  .btn-secondary {
+    @apply bg-white/10 outline-1 outline-white/40 outline-offset-[-1px] px-7 py-2.5 rounded-[var(--border-radius)] transition-all duration-200 hover:bg-white/20 hover:outline-white/60;
+  }
 }

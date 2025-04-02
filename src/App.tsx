@@ -1,20 +1,27 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Hero from "./pages/Hero";
+import Products from "./pages/Products";
+import Solutions from "./pages/Solutions";
+import CaseStudies from "./pages/CaseStudies";
+import AboutUs from "./pages/AboutUs";
+import Contact from "./pages/Contact";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <>
-      {/* change min-h to min-h-screen when finished */}
-      <div className="min-h-[4800px] mx-auto">
-        <Hero />
-        <div className="px-4 sm:px-6 lg:px-8">
-          <section id="" className=""></section>
-          <section id="" className=""></section>
-          <section id="" className=""></section>
-          <section id="" className=""></section>
-          <section id="" className=""></section>
-        </div>
+    <Router>
+      <div className="min-h-screen">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/solutions" element={<Solutions />} />
+          <Route path="/case-studies" element={<CaseStudies />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </div>
-    </>
+    </Router>
   );
 }
 
