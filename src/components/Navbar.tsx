@@ -5,6 +5,7 @@ import LogoPrimary from "../assets/logo.png";
 interface MenuItem {
   label: string;
   href: string;
+  subItems?: MenuItem[];
 }
 
 interface NavbarLinksProps {
@@ -13,7 +14,20 @@ interface NavbarLinksProps {
 }
 
 const menuItems: MenuItem[] = [
-  { label: "Products", href: "/products" },
+  {
+    label: "Products",
+    href: "/products",
+    subItems: [
+      { label: "Overview", href: "/products/overview" },
+      { label: "Led-Bracelet", href: "/products/led-bracelet" },
+      { label: "Led-Lanyard", href: "/products/led-lanyard" },
+      {
+        label: "Rechargeable bracelet",
+        href: "/products/rechargeable-bracelet",
+      },
+      { label: "Smart Tags", href: "/products/smart-tags" },
+    ],
+  },
   { label: "Solutions", href: "/solutions" },
   { label: "Case Studies", href: "/case-studies" },
   { label: "About Us", href: "/about" },
@@ -54,17 +68,67 @@ const MenuButton = memo(
 );
 MenuButton.displayName = "MenuButton";
 
-const NavbarLinks = memo(({ className, onClick }: NavbarLinksProps) => (
-  <>
-    {menuItems.map((item) => (
-      <li key={item.href}>
-        <Link to={item.href} className={className} onClick={onClick}>
-          {item.label}
-        </Link>
-      </li>
-    ))}
-  </>
-));
+const NavbarLinks = memo(({ className, onClick }: NavbarLinksProps) => {
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+
+  return (
+    <>
+      {menuItems.map((item) => (
+        <li
+          key={item.href}
+          className="relative"
+          onMouseEnter={() => item.subItems && setActiveDropdown(item.label)}
+          onMouseLeave={() => setActiveDropdown(null)}
+        >
+          <Link
+            to={item.href}
+            className={`${className} flex items-center gap-1`}
+            onClick={onClick}
+          >
+            {item.label}
+            {item.subItems && (
+              <svg
+                className={`w-4 h-4 transition-transform duration-200 ${
+                  activeDropdown === item.label ? "rotate-180" : ""
+                }`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            )}
+          </Link>
+          {item.subItems && (
+            <div
+              className={`absolute left-0 mt-2 w-48 bg-[var(--background-primary)] rounded-lg shadow-lg py-2 transition-all duration-200 ${
+                activeDropdown === item.label
+                  ? "opacity-100 visible translate-y-0"
+                  : "opacity-0 invisible -translate-y-2"
+              }`}
+            >
+              {item.subItems.map((subItem) => (
+                <Link
+                  key={subItem.href}
+                  to={subItem.href}
+                  className="block px-4 py-2 hover:text-[var(--text-primary)] hover:opacity-80"
+                  onClick={onClick}
+                >
+                  {subItem.label}
+                </Link>
+              ))}
+            </div>
+          )}
+        </li>
+      ))}
+    </>
+  );
+});
 NavbarLinks.displayName = "NavbarLinks";
 
 // Constants for class names to avoid string concatenation on every render
@@ -75,6 +139,9 @@ const MOBILE_MENU_CLOSED_CLASSES = "-translate-y-full opacity-0 invisible";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
+  const [activeMobileDropdown, setActiveMobileDropdown] = useState<
+    string | null
+  >(null);
 
   // Memoized handlers to prevent recreation on renders
   const toggleSidebar = useCallback(() => {
@@ -95,9 +162,9 @@ const Navbar = () => {
   }`;
 
   return (
-    <div className="relative z-50">
+    <div className="fixed top-0 left-0 right-0 z-50">
       <nav className={navClasses}>
-        <div className="container mx-auto px-6 sm:px-8 h-16 md:h-24 flex justify-between items-center">
+        <div className="container mx-auto px-6 sm:px-8 h-16 md:h-32 flex justify-between items-center">
           <Link to="/">
             <img
               src={LogoPrimary}
@@ -118,7 +185,7 @@ const Navbar = () => {
 
           {/* Desktop Button */}
           <Link to="/" className="hidden md:block btn-secondary">
-            Dashboard
+            Book a Call
           </Link>
 
           {/* Mobile Menu Button */}
@@ -129,7 +196,72 @@ const Navbar = () => {
         <div className={mobileMenuClasses}>
           <div className="p-6 sm:p-8">
             <ul className="flex flex-col gap-6">
-              <NavbarLinks className="text-lg" onClick={handleLinkClick} />
+              {menuItems.map((item) => (
+                <li key={item.href}>
+                  {item.subItems ? (
+                    <div>
+                      <button
+                        className="text-lg flex items-center justify-between w-full"
+                        onClick={() =>
+                          setActiveMobileDropdown(
+                            activeMobileDropdown === item.label
+                              ? null
+                              : item.label
+                          )
+                        }
+                      >
+                        {item.label}
+                        <svg
+                          className={`w-5 h-5 transition-transform ${
+                            activeMobileDropdown === item.label
+                              ? "rotate-180"
+                              : ""
+                          }`}
+                          fill="none"
+                          stroke="currentColor"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M19 9l-7 7-7-7"
+                          />
+                        </svg>
+                      </button>
+                      <div
+                        className={`overflow-hidden transition-all duration-200 ${
+                          activeMobileDropdown === item.label
+                            ? "max-h-96 opacity-100"
+                            : "max-h-0 opacity-0"
+                        }`}
+                      >
+                        <ul className="pl-4 mt-2 space-y-2">
+                          {item.subItems.map((subItem) => (
+                            <li key={subItem.href}>
+                              <Link
+                                to={subItem.href}
+                                className="text-base block py-2"
+                                onClick={handleLinkClick}
+                              >
+                                {subItem.label}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                  ) : (
+                    <Link
+                      to={item.href}
+                      className="text-lg"
+                      onClick={handleLinkClick}
+                    >
+                      {item.label}
+                    </Link>
+                  )}
+                </li>
+              ))}
               <li>
                 <Link to="/" className="inline-block btn-secondary">
                   Dashboard

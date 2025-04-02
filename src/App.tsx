@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Hero from "./pages/Hero";
+import Homepage from "./pages/Homepage";
 import Products from "./pages/Products";
 import Solutions from "./pages/Solutions";
 import CaseStudies from "./pages/CaseStudies";
@@ -13,7 +13,7 @@ function App() {
       <div className="min-h-screen">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Hero />} />
+          <Route path="/" element={<Homepage />} />
           <Route path="/products" element={<Products />} />
           <Route path="/solutions" element={<Solutions />} />
           <Route path="/case-studies" element={<CaseStudies />} />
