@@ -3,4 +3,32 @@
 
 @theme {
   --font-jakarta: "Plus Jakarta Sans", "sans-serif";
+  --background-primary: #0d1821;
+  --text-primary: #f2f9fe;
+  --text-secondary: #dcdcdc;
+  --text-accent: #4e5261;
+  --border-radius: 12px;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-jakarta);
+  }
+
+  body {
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+  }
+
+  h1,
+  h2 {
+    @apply tracking-tight;
+  }
+
+  p {
+    @apply text-base;
+  }
+}
+
+@layer components {
 }
