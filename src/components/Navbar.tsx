@@ -1,4 +1,4 @@
-import { useState, useCallback, memo } from "react";
+import { useState, useCallback, memo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import LogoPrimary from "../assets/logo.png";
 
@@ -142,6 +142,18 @@ const Navbar = () => {
   const [activeMobileDropdown, setActiveMobileDropdown] = useState<
     string | null
   >(null);
+  const [isScrolled, setIsScrolled] = useState<boolean>(false);
+
+  // Add scroll event listener
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Memoized handlers to prevent recreation on renders
   const toggleSidebar = useCallback(() => {
@@ -153,8 +165,10 @@ const Navbar = () => {
   }, []);
 
   // Memoized class strings
-  const navClasses = `relative w-full z-50 transition-colors duration-300 ${
-    isSidebarOpen ? "bg-[var(--background-primary)]" : "bg-transparent"
+  const navClasses = `relative w-full z-50 transition-all duration-300 ${
+    isSidebarOpen || isScrolled
+      ? "bg-[var(--background-primary)] shadow-lg"
+      : "bg-transparent"
   }`;
 
   const mobileMenuClasses = `${MOBILE_MENU_BASE_CLASSES} ${
@@ -164,7 +178,7 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
       <nav className={navClasses}>
-        <div className="container max-w-7xl mx-auto px-4 sm:px-8 h-16 lg:h-32 flex justify-between items-center">
+        <div className="container max-w-7xl mx-auto px-4 sm:px-8 h-16 lg:h-24 flex justify-between items-center">
           <Link to="/">
             <img
               src={LogoPrimary}
