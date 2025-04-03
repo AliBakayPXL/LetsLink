@@ -37,7 +37,7 @@ const menuItems: MenuItem[] = [
 const MenuButton = memo(
   ({ isOpen, onClick }: { isOpen: boolean; onClick: () => void }) => (
     <button
-      className="md:hidden"
+      className="lg:hidden"
       onClick={onClick}
       aria-label={isOpen ? "Close menu" : "Open menu"}
     >
@@ -133,7 +133,7 @@ NavbarLinks.displayName = "NavbarLinks";
 
 // Constants for class names to avoid string concatenation on every render
 const MOBILE_MENU_BASE_CLASSES =
-  "md:hidden absolute left-0 right-0 bg-[var(--background-primary)] transform transition-all duration-300 ease-in-out";
+  "lg:hidden absolute left-0 right-0 bg-[var(--background-primary)] transform transition-all duration-300 ease-in-out";
 const MOBILE_MENU_OPEN_CLASSES = "translate-y-0 opacity-100 visible";
 const MOBILE_MENU_CLOSED_CLASSES = "-translate-y-full opacity-0 invisible";
 
@@ -164,27 +164,30 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
       <nav className={navClasses}>
-        <div className="container mx-auto px-6 sm:px-8 h-16 md:h-32 flex justify-between items-center">
+        <div className="container max-w-7xl mx-auto px-4 sm:px-8 h-16 lg:h-32 flex justify-between items-center">
           <Link to="/">
             <img
               src={LogoPrimary}
               alt="logo-primary"
-              className="h-6 md:h-8"
+              className="h-6 lg:h-8"
               width="auto"
               height="32"
             />
           </Link>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex gap-16">
+          <ul className="hidden lg:flex gap-8 xl:gap-16">
             <NavbarLinks
-              className="hover:text-[var(--text-primary)] hover:opacity-80"
+              className="hover:text-[var(--text-primary)] hover:opacity-80 whitespace-nowrap"
               onClick={handleLinkClick}
             />
           </ul>
 
           {/* Desktop Button */}
-          <Link to="/" className="hidden md:block btn-secondary">
+          <Link
+            to="/"
+            className="hidden lg:block btn-secondary whitespace-nowrap"
+          >
             Book a Call
           </Link>
 
@@ -275,7 +278,7 @@ const Navbar = () => {
       {/* Overlay for closing menu when clicking outside */}
       {isSidebarOpen && (
         <div
-          className="md:hidden absolute top-full inset-x-0 h-screen bg-black/50"
+          className="lg:hidden absolute top-full inset-x-0 h-screen bg-black/50"
           onClick={handleLinkClick}
         />
       )}

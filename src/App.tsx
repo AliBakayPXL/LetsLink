@@ -10,7 +10,8 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <Router>
-      <div className="min-h-screen">
+      {/* change min-h-[16000px] to min-h-screen once all pages are done*/}
+      <div className="min-h-[16000px]">
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
