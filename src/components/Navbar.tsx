@@ -264,7 +264,7 @@ const Navbar = () => {
               ))}
               <li>
                 <Link to="/" className="inline-block btn-secondary">
-                  Dashboard
+                  Book a Call
                 </Link>
               </li>
             </ul>
