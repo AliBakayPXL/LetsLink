@@ -176,7 +176,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex gap-10">
+          <ul className="hidden md:flex gap-16">
             <NavbarLinks
               className="hover:text-[var(--text-primary)] hover:opacity-80"
               onClick={handleLinkClick}

@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const Hero = () => {
   return (
@@ -15,15 +17,34 @@ const Hero = () => {
       <div className="relative z-10 flex h-full items-center">
         <div className="container mx-auto px-6 sm:px-8">
           <div className="max-w-2xl">
-            <h1 className="mb-6 text-[3rem] font-bold leading-tight  sm:text-[4.5rem]">
+            <motion.h1
+              variants={fadeIn("up", 0.3)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.3 }}
+              className="mb-6 text-[3rem] font-bold leading-tight  sm:text-[4.5rem]"
+            >
               Rent LED Bracelets for Events
-            </h1>
-            <p className="sm:mb-14 mb-10 text-2xl font-light sm:text-[2rem]">
+            </motion.h1>
+            <motion.p
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.3 }}
+              className="sm:mb-14 mb-10 text-2xl font-light sm:text-[2rem]"
+            >
               Sync and light up the crowd with our customizable LED bracelets.
-            </p>
-            <Link to="/contact" className="btn-primary">
-              Get a Free Quote
-            </Link>
+            </motion.p>
+            <motion.div
+              variants={fadeIn("up", 0.5)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <Link to="/contact" className="btn-primary">
+                Get a Free Quote
+              </Link>
+            </motion.div>
           </div>
         </div>
       </div>
