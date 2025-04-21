@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
@@ -6,14 +6,36 @@ interface SolutionCardProps {
   imageUrl: string;
   title: string;
   description: string;
+  isActive?: boolean;
 }
 
 const SolutionCard: React.FC<SolutionCardProps> = ({
   imageUrl,
   title,
   description,
+  isActive = false,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    // Initial check
+    checkIfMobile();
+
+    // Add event listener
+    window.addEventListener("resize", checkIfMobile);
+
+    // Cleanup
+    return () => window.removeEventListener("resize", checkIfMobile);
+  }, []);
+
+  // Show description when hovered on desktop or when active on mobile
+  const shouldShowDescription =
+    (isMobile && isActive) || (!isMobile && isHovered);
 
   const contentVariants = {
     default: {
@@ -54,11 +76,11 @@ const SolutionCard: React.FC<SolutionCardProps> = ({
 
   return (
     <motion.div
-      className="relative w-60 h-[22rem] rounded-[var(--border-radius)] overflow-hidden cursor-pointer"
+      className="relative w-full h-[28rem] md:h-[24rem] rounded-[var(--border-radius)] overflow-hidden cursor-pointer"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       initial="default"
-      animate={isHovered ? "hover" : "default"}
+      animate={shouldShowDescription ? "hover" : "default"}
     >
       {/* Background Image */}
       <div
@@ -71,7 +93,7 @@ const SolutionCard: React.FC<SolutionCardProps> = ({
         className="absolute inset-0"
         variants={overlayVariants}
         initial="default"
-        animate={isHovered ? "hover" : "default"}
+        animate={shouldShowDescription ? "hover" : "default"}
         transition={{ duration: 0.3 }}
       />
 
@@ -80,22 +102,22 @@ const SolutionCard: React.FC<SolutionCardProps> = ({
         className="relative h-full flex flex-col justify-end p-6"
         variants={contentVariants}
         initial="default"
-        animate={isHovered ? "hover" : "default"}
+        animate={shouldShowDescription ? "hover" : "default"}
         transition={{ duration: 0.3 }}
       >
         {/* Title - Always Visible */}
-        <h3 className="text-white font-bold">{title}</h3>
+        <h3 className="text-white text-xl font-bold">{title}</h3>
 
         {/* Description - Visible on Hover */}
         {description && (
           <motion.div
             variants={descriptionVariants}
             initial="default"
-            animate={isHovered ? "hover" : "default"}
+            animate={shouldShowDescription ? "hover" : "default"}
             transition={{ duration: 0.2 }}
           >
             <div className="w-full h-[0.5px] bg-[#3CACD2] my-3" />
-            <p className="text-white text-xs leading-5">{description}</p>
+            <p className="text-white text-sm leading-6">{description}</p>
           </motion.div>
         )}
       </motion.div>
