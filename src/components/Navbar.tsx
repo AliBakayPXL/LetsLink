@@ -106,7 +106,7 @@ const NavbarLinks = memo(({ className, onClick }: NavbarLinksProps) => {
           </Link>
           {item.subItems && (
             <div
-              className={`absolute left-0 mt-2 w-48 bg-[var(--background-primary)] rounded-lg shadow-lg py-2 transition-all duration-200 ${
+              className={`absolute left-0 mt-2 w-48 bg-[var(--color-primary)] rounded-lg shadow-lg py-2 transition-all duration-200 ${
                 activeDropdown === item.label
                   ? "opacity-100 visible translate-y-0"
                   : "opacity-0 invisible -translate-y-2"
@@ -133,7 +133,7 @@ NavbarLinks.displayName = "NavbarLinks";
 
 // Constants for class names to avoid string concatenation on every render
 const MOBILE_MENU_BASE_CLASSES =
-  "lg:hidden absolute left-0 right-0 bg-[var(--background-primary)] transform transition-all duration-300 ease-in-out";
+  "lg:hidden absolute left-0 right-0 bg-[var(--color-primary)] transform transition-all duration-300 ease-in-out";
 const MOBILE_MENU_OPEN_CLASSES = "translate-y-0 opacity-100 visible";
 const MOBILE_MENU_CLOSED_CLASSES = "-translate-y-full opacity-0 invisible";
 
@@ -167,7 +167,7 @@ const Navbar = () => {
   // Memoized class strings
   const navClasses = `relative w-full z-50 transition-all duration-300 ${
     isSidebarOpen || isScrolled
-      ? "bg-[var(--background-primary)] shadow-lg"
+      ? "bg-[var(--color-primary)] shadow-lg"
       : "bg-transparent"
   }`;
 
