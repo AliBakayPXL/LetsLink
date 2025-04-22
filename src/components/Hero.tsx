@@ -5,7 +5,7 @@ import { fadeIn } from "../variants";
 
 const Hero = () => {
   return (
-    <div className="relative h-[86vh] sm:h-screen bg-[url('/hero-bg.webp')] bg-cover bg-center bg-no-repeat">
+    <div className="relative h-[86vh] sm:h-screen bg-[url('/hero-bg.webp')] bg-cover bg-center bg-no-repeat text-secondary">
       {/* Semi-transparent overlay */}
       <div className="absolute inset-0 bg-[#0D1821] opacity-50"></div>
 
@@ -38,7 +38,10 @@ const Hero = () => {
               initial="hidden"
               animate="show"
             >
-              <Link to="/contact" className="btn-primary">
+              <Link
+                to="/contact"
+                className="sm:px-9 px-8 py-3.5 sm:text-xl text-lg rounded-full bg-[#3CACD2] text-primary transition-all duration-200 hover:bg-[#4BC8D0] hover:outline hover:outline-1 hover:outline-[#3CACD2]/40 hover:outline-offset-[-1px]"
+              >
                 Get a Free Quote
               </Link>
             </motion.div>

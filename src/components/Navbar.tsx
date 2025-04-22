@@ -28,9 +28,8 @@ const menuItems: MenuItem[] = [
       { label: "Smart Tags", href: "/products/smart-tags" },
     ],
   },
-  { label: "Solutions", href: "/solutions" },
-  { label: "Case Studies", href: "/case-studies" },
-  { label: "About Us", href: "/about" },
+  { label: "How It Works", href: "#howitworks" },
+  { label: "Experiences", href: "/experiences" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -42,7 +41,7 @@ const MenuButton = memo(
       aria-label={isOpen ? "Close menu" : "Open menu"}
     >
       <svg
-        className="w-6 h-6 text-primary"
+        className="w-6 h-6 text-secondary"
         fill="none"
         stroke="currentColor"
         viewBox="0 0 24 24"
@@ -106,7 +105,7 @@ const NavbarLinks = memo(({ className, onClick }: NavbarLinksProps) => {
           </Link>
           {item.subItems && (
             <div
-              className={`absolute left-0 mt-2 w-48 bg-[var(--color-primary)] rounded-lg shadow-lg py-2 transition-all duration-200 ${
+              className={`absolute left-0 mt-2 w-48 bg-primary rounded-lg shadow-lg py-2 transition-all duration-200 ${
                 activeDropdown === item.label
                   ? "opacity-100 visible translate-y-0"
                   : "opacity-0 invisible -translate-y-2"
@@ -116,7 +115,7 @@ const NavbarLinks = memo(({ className, onClick }: NavbarLinksProps) => {
                 <Link
                   key={subItem.href}
                   to={subItem.href}
-                  className="block px-4 py-2 hover:text-[var(--text-primary)] hover:opacity-80"
+                  className="block px-4 py-2 hover:text-secondary hover:opacity-80"
                   onClick={onClick}
                 >
                   {subItem.label}
@@ -133,7 +132,7 @@ NavbarLinks.displayName = "NavbarLinks";
 
 // Constants for class names to avoid string concatenation on every render
 const MOBILE_MENU_BASE_CLASSES =
-  "lg:hidden absolute left-0 right-0 bg-[var(--color-primary)] transform transition-all duration-300 ease-in-out";
+  "lg:hidden absolute left-0 right-0 bg-primary transform transition-all duration-300 ease-in-out";
 const MOBILE_MENU_OPEN_CLASSES = "translate-y-0 opacity-100 visible";
 const MOBILE_MENU_CLOSED_CLASSES = "-translate-y-full opacity-0 invisible";
 
@@ -166,9 +165,7 @@ const Navbar = () => {
 
   // Memoized class strings
   const navClasses = `relative w-full z-50 transition-all duration-300 ${
-    isSidebarOpen || isScrolled
-      ? "bg-[var(--color-primary)] shadow-lg"
-      : "bg-transparent"
+    isSidebarOpen || isScrolled ? "bg-primary shadow-lg" : "bg-transparent"
   }`;
 
   const mobileMenuClasses = `${MOBILE_MENU_BASE_CLASSES} ${
@@ -176,7 +173,7 @@ const Navbar = () => {
   }`;
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50">
+    <div className="fixed top-0 left-0 right-0 z-50 text-secondary">
       <nav className={navClasses}>
         <div className="container max-w-7xl mx-auto px-4 sm:px-8 h-16 lg:h-24 flex justify-between items-center">
           <Link to="/">
@@ -192,7 +189,7 @@ const Navbar = () => {
           {/* Desktop Menu */}
           <ul className="hidden lg:flex gap-8 xl:gap-16">
             <NavbarLinks
-              className="hover:text-[var(--text-primary)] hover:opacity-80 whitespace-nowrap"
+              className="hover:text-secondary hover:opacity-80 whitespace-nowrap"
               onClick={handleLinkClick}
             />
           </ul>
@@ -200,7 +197,7 @@ const Navbar = () => {
           {/* Desktop Button */}
           <Link
             to="/"
-            className="hidden lg:block btn-secondary whitespace-nowrap"
+            className="hidden lg:block bg-white/10 outline-1 outline-white/40 outline-offset-[-1px] px-7 py-2.5 rounded-full transition-all duration-200 hover:bg-[#3CACD2] hover:outline-none hover:text-primary whitespace-nowrap"
           >
             Book a Call
           </Link>
@@ -280,7 +277,10 @@ const Navbar = () => {
                 </li>
               ))}
               <li>
-                <Link to="/" className="inline-block btn-secondary">
+                <Link
+                  to="/"
+                  className="inline-block bg-white/10 outline-1 outline-white/40 outline-offset-[-1px] px-7 py-2.5 rounded-full transition-all duration-200 hover:bg-[#3CACD2] hover:outline-none hover:text-primary whitespace-nowrap"
+                >
                   Book a Call
                 </Link>
               </li>

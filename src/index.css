@@ -5,9 +5,7 @@
   --font-jakarta: "Plus Jakarta Sans", "sans-serif";
   --color-primary: #0d1821;
   --color-secondary: #f2f9fe;
-  --text-primary: #f2f9fe;
-  --text-secondary: #dcdcdc;
-  --text-accent: #4e5261;
+  --color-accent: #3cacd2;
   --border-radius: 1rem;
 }
 
@@ -19,11 +17,10 @@
 
   body {
     background-color: var(--color-secondary);
-    color: var(--text-primary);
+    color: var(--color-primary);
   }
 
-  h1,
-  h2 {
+  h1 {
     @apply tracking-tight;
   }
 
@@ -34,11 +31,19 @@
 
 @layer components {
   .btn-primary {
-    @apply sm:px-9 px-8 py-3.5 sm:text-xl text-lg rounded-[var(--border-radius)] bg-[#3CACD2] text-[var(--color-primary)] transition-all duration-200 hover:bg-[#4BC8D0] hover:outline hover:outline-1 hover:outline-[#3CACD2]/40 hover:outline-offset-[-1px];
+    @apply rounded-full bg-[var(--color-primary)] px-10 py-3 text-[var(--color-secondary)] tracking-wide;
   }
 
   .btn-secondary {
-    @apply bg-white/10 outline-1 outline-white/40 outline-offset-[-1px] px-7 py-2.5 rounded-[var(--border-radius)] transition-all duration-200 hover:bg-[#3CACD2] hover:outline-none hover:text-[var(--color-primary)];
+    @apply rounded-full bg-[var(--color-accent)] px-10 py-3 text-[var(--color-primary)] tracking-wide;
+  }
+
+  .title {
+    @apply text-[2.5rem] font-bold leading-[3.25rem];
+  }
+
+  .subtitle {
+    @apply text-[1.125rem] leading-8 text-[#3E4C57];
   }
 }
 

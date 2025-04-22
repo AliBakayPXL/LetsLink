@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
-interface SolutionCardProps {
+interface ExperienceCardProps {
   imageUrl: string;
   title: string;
   description: string;
   isActive?: boolean;
 }
 
-const SolutionCard: React.FC<SolutionCardProps> = ({
+const ExperienceCard: React.FC<ExperienceCardProps> = ({
   imageUrl,
   title,
   description,
@@ -125,4 +125,4 @@ const SolutionCard: React.FC<SolutionCardProps> = ({
   );
 };
 
-export default SolutionCard;
+export default ExperienceCard;
