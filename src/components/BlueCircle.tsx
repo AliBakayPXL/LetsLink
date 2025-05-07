@@ -8,7 +8,7 @@ interface BlueCircleProps {
 const BlueCircle = ({ children, className = "" }: BlueCircleProps) => (
   <span
     className={
-      "bg-[#053241] rounded-full p-3 mr-4 inline-flex items-center justify-center " +
+      "bg-[#053242] rounded-full p-3 mr-4 inline-flex items-center justify-center " +
       className
     }
   >
