@@ -37,12 +37,14 @@ const ExperiencesPreview = () => {
   ];
 
   return (
-    <div className="relative overflow-hidden py-24">
+    <div className="relative min-h-screen flex flex-col justify-start sm:justify-center items-center py-8 sm:py-16">
       {/* Decorative background square - only visible on desktop */}
       <div className="hidden xl:block absolute right-[18rem] bottom-10 w-[72rem] h-[22rem] bg-[#d9e8f4] -z-10" />
 
-      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex sm:justify-between sm:items-end flex-col sm:flex-row">
+      <div className="container mx-auto max-w-7xl">
+        <div className="flex sm:justify-between sm:items-end flex-col sm:flex-row px-2 sm:px-0">
+          {" "}
+          {/* Hier voor mobile te doen */}
           <h1 className="title max-w-sm">Event solutions for every occasion</h1>
           <p className="subtitle max-w-md">
             From concerts to corporate gatherings—discover how LetsLink powers

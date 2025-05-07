@@ -1,7 +1,84 @@
-import React from "react";
-
-const HowItWorks = () => {
-  return <div>HowItWorks</div>;
-};
+import SeeInAction from "../assets/seeinaction.jpeg";
+const CheckIcon = () => (
+  <svg
+    className="w-5 h-5 text-[#3CACD2] mr-3 flex-shrink-0"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={2}
+    viewBox="0 0 24 24"
+  >
+    <circle
+      cx="12"
+      cy="12"
+      r="10"
+      stroke="#3CACD2"
+      strokeWidth="2"
+      fill="#eaf1f5"
+    />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="M9 12l2 2 4-4"
+      stroke="#3CACD2"
+      strokeWidth={2}
+    />
+  </svg>
+);
+const HowItWorks = () => (
+  <section className="h-screen flex justify-center flex-col px-4 md:px-8">
+    {/* Hier kan je de hele component aanpassen */}
+    <div className="max-w-7xl mx-auto">
+      {/* Hier gap aanpassen tussen afbeelding en tekst */}
+      <div className="flex flex-col md:flex-row items-start md:items-center gap-14 md:gap-40">
+        {/* Afbeelding */}
+        <div className="relative w-full md:w-[640px] flex-shrink-0">
+          <img
+            src={SeeInAction}
+            alt="People connecting at event"
+            className="rounded-xl w-full h-[420px] object-cover"
+          />
+          <div className="absolute bottom-6 left-6">
+            <a
+              href="https://www.youtube.com/watch?v=G1hKzCkywM8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white text-base font-semibold flex items-center gap-5 bg-black/50 px-4 py-2 rounded-full hover:bg-[#3CACD2] transition-all"
+            >
+              See it in action →
+            </a>
+          </div>
+        </div>
+        {/* Tekst content */}
+        <div className="flex-1 flex flex-col justify-center gap-8">
+          <h2 className="title">Connect people at events</h2>
+          <p className="description">
+            Do you want to create an immersive, interactive experience that
+            makes it easy for guests to connect at your event?
+          </p>
+          <ul className="space-y-3">
+            <li className="flex items-center">
+              <CheckIcon />
+              <span className="text-gray-900 font-semibold text-base">
+                Smart match technology
+              </span>
+            </li>
+            <li className="flex items-center">
+              <CheckIcon />
+              <span className="text-gray-900 font-semibold text-base">
+                Frictionless networking
+              </span>
+            </li>
+            <li className="flex items-center">
+              <CheckIcon />
+              <span className="text-gray-900 font-semibold text-base">
+                Events that truly engage
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+);
 
 export default HowItWorks;
