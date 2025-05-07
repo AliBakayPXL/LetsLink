@@ -11,7 +11,7 @@ function App() {
     <Router>
       {/* change min-h-[16000px] to min-h-screen once all pages are done*/}
       <div className="min-h-screen flex flex-col">
-        <Navbar />
+        
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Homepage />} />

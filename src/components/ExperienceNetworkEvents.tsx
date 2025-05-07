@@ -90,7 +90,7 @@ const ExperienceNetworkEvents: React.FC = () => {
               "Networking so intuitive, it happens before hello."
             </p>
 
-            <button className="mt-8 px-8 py-3 bg-blue-400 hover:bg-blue-500 text-white font-medium rounded-full transition-colors">
+            <button className="mt-8 px-8 py-3 bg-[#3CACD2] hover:bg-[#4BC8D0] text-white font-medium rounded-full transition-colors">
               Get a Free Quote
             </button>
           </div>
