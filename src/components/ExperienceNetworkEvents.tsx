@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 import tableWithWineGlasses from "../assets/tablewithwineglasses.jpeg";
 import yellowBracelets from "../assets/yellowbracelets.jpeg";
+import Contact from '../pages/Contact';
 
 const ExperienceNetworkEvents: React.FC = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
@@ -89,9 +91,9 @@ const ExperienceNetworkEvents: React.FC = () => {
               "Networking so intuitive, it happens before hello."
             </p>
 
-            <button className="mt-8 px-8 py-3 bg-[#3CACD2] hover:bg-[#4BC8D0] text-white font-medium rounded-full transition-colors">
+            <Link to="/Contact" className="inline-block mt-8 px-8 py-3 bg-[#3CACD2] hover:bg-[#4BC8D0] text-white font-medium rounded-full transition-colors">
               Get a Free Quote
-            </button>
+            </Link>
           </div>
 
           {/* Right side images */}
