@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
+import djBracelet from "../assets/djbracelet.jpeg";
+import carglassunizobracelet from "../assets/carglassunizobracelets.png";
 
 const ExperienceNetworkCorp: React.FC = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   const images = [
-    "/api/placeholder/800/600", // Top-left image (blue LED wearable)
-    "/api/placeholder/800/600", // Top-right image (control board with yellow LED)
-    "/api/placeholder/1200/800", // Bottom video thumbnail
+    {carglassunizobracelet}, 
+    {djBracelet}, 
+    "/api/placeholder/1200/800", 
   ];
 
   const openGallery = (index: number) => {
@@ -39,7 +41,7 @@ const ExperienceNetworkCorp: React.FC = () => {
                 onClick={() => openGallery(0)}
               >
                 <img 
-                  src="/api/placeholder/600/400" 
+                  src={carglassunizobracelet} 
                   alt="Blue LED wearable with corporate branding" 
                   className="w-full h-64 object-cover rounded-lg"
                 />
@@ -49,7 +51,7 @@ const ExperienceNetworkCorp: React.FC = () => {
                 onClick={() => openGallery(1)}
               >
                 <img 
-                  src="/api/placeholder/600/400" 
+                  src={djBracelet} 
                   alt="Control panel with yellow LED wearable" 
                   className="w-full h-64 object-cover rounded-lg"
                 />

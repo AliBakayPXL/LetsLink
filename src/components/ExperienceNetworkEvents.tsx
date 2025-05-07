@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
+import tableWithWineGlasses from "../assets/tablewithwineglasses.jpeg";
+import yellowBracelets from "../assets/yellowbracelets.jpeg";
 
 const ExperienceNetworkEvents: React.FC = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
   const images = [
-    "/api/placeholder/800/600", // Top-left image (wine glasses)
-    "/api/placeholder/800/600", // Top-right image (wearable LEDs)
-    "/api/placeholder/1200/800", // Bottom video thumbnail for gallery view
+    {tableWithWineGlasses}, 
+    {yellowBracelets}, 
+    "/api/placeholder/1200/800", 
   ];
 
   const openGallery = (index: number) => {
@@ -104,7 +106,7 @@ const ExperienceNetworkEvents: React.FC = () => {
                   onClick={() => openGallery(0)}
                 >
                   <img 
-                    src="/api/placeholder/600/400" 
+                    src={tableWithWineGlasses}
                     alt="Event networking with wine glasses" 
                     className="w-full h-64 object-cover rounded-lg"
                   />
@@ -114,7 +116,7 @@ const ExperienceNetworkEvents: React.FC = () => {
                   onClick={() => openGallery(1)}
                 >
                   <img 
-                    src="/api/placeholder/600/400" 
+                    src={yellowBracelets} 
                     alt="LED wearables at event" 
                     className="w-full h-64 object-cover rounded-lg"
                   />
