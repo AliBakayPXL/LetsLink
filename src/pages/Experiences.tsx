@@ -1,7 +1,12 @@
 import React from "react";
+import ExperienceHero from "../components/ExperienceHero";
 
 const Experiences = () => {
-  return <div>Experiences</div>;
+  return (
+  <main>
+    <ExperienceHero/>
+  </main>
+  )
 };
 
 export default Experiences;
