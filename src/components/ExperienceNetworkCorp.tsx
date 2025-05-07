@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import djBracelet from "../assets/djbracelet.jpeg";
 import carglassunizobracelet from "../assets/carglassunizobracelets.png";
+import video from "../assets/LetsLink.mp4";
 
 const ExperienceNetworkCorp: React.FC = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
@@ -56,11 +57,10 @@ const ExperienceNetworkCorp: React.FC = () => {
               </div>
             </div>
             <div 
-              className="cursor-pointer relative"
-              onClick={() => openGallery(2)}
+              className="relative"
             >
               <video 
-                src="/api/placeholder/1200/600" 
+                src={video} 
                 className="w-full h-80 object-cover rounded-lg"
                 autoPlay
                 loop
