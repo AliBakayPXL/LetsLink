@@ -6,11 +6,8 @@ const ExperienceNetworkEvents: React.FC = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
-  const images = [
-    {tableWithWineGlasses}, 
-    {yellowBracelets}, 
-    "/api/placeholder/1200/800", 
-  ];
+  const images = [tableWithWineGlasses, yellowBracelets];
+
 
   const openGallery = (index: number) => {
     setActiveImageIndex(index);
@@ -124,7 +121,6 @@ const ExperienceNetworkEvents: React.FC = () => {
               </div>
               <div 
                 className="cursor-pointer relative"
-                onClick={() => openGallery(2)}
               >
                 <video 
                   src="/api/placeholder/1200/600" 

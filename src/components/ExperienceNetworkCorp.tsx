@@ -6,11 +6,8 @@ const ExperienceNetworkCorp: React.FC = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
-  const images = [
-    {carglassunizobracelet}, 
-    {djBracelet}, 
-    "/api/placeholder/1200/800", 
-  ];
+  const images = [carglassunizobracelet,djBracelet];
+
 
   const openGallery = (index: number) => {
     setActiveImageIndex(index);
