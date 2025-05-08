@@ -3,7 +3,7 @@ import ReBracelet from "../assets/recharchable.png"
 
 const ProductSmartTag: React.FC = () => {
   return (
-    <div className="bg-white flex justify-center items-center py-28 px-4">
+    <div id="led-rebracelet" className="scroll-mt-38 bg-white flex justify-center items-center py-28 px-4">
       <div className="max-w-6xl w-full flex flex-col md:flex-row gap-48 items-center">
         {/* Product Image - Now on the left */}
         <div className="w-full md:w-1/2 bg-gray-200 rounded-lg p-8 flex justify-center items-center">

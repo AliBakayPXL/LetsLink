@@ -3,7 +3,7 @@ import Lanyard from "../assets/Lanyard.png"
 
 const ProductLanyard: React.FC = () => {
   return (
-    <div className="bg-white flex justify-center items-center py-28 px-4">
+    <div id="led-lanyard" className="scroll-mt-38 bg-white flex justify-center items-center py-28 px-4">
       <div className="max-w-6xl w-full flex flex-col md:flex-row gap-48 items-center">
         {/* Product Info - Now on the left */}
         <div className="w-full md:w-1/2 p-4">

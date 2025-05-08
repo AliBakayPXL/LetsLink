@@ -16,18 +16,21 @@ interface NavbarLinksProps {
 const menuItems: MenuItem[] = [
   {
     label: "Products",
-    href: "/products",
+    href: "/products#hero",
     subItems: [
-      { label: "Overview", href: "/products/overview" },
-      { label: "Led-Bracelet", href: "/products/led-bracelet" },
-      { label: "Led-Lanyard", href: "/products/led-lanyard" },
-      { label: "Rechargeable bracelet", href: "/products/rechargeable-bracelet" },
-      { label: "Smart Tags", href: "/products/smart-tags" },
+      { label: "Overview", href: "/products#hero" },
+      { label: "Led-Bracelet", href: "/products#led-bracelet" },
+      { label: "Led-Lanyard", href: "/products#led-lanyard" },
+      {
+        label: "Rechargeable bracelet",
+        href: "/products#led-rebracelet",
+      },
+      { label: "Smart Tags", href: "/products#smart-tag" },
     ],
   },
   { label: "How It Works", href: "#howitworks" },
-  { label: "Experiences", href: "/experiences" },
-  { label: "Contact", href: "/contact" },
+  { label: "Experiences", href: "/experiences#hero" },
+  { label: "Contact", href: "/contact#contact" },
 ];
 
 const MenuButton = memo(({ isOpen, onClick }: { isOpen: boolean; onClick: () => void }) => (
@@ -117,7 +120,7 @@ const ExperienceNavbar = () => {
     <div className="fixed top-0 left-0 right-0 z-50 text-secondary">
       <nav className={navClasses}>
         <div className="container max-w-7xl mx-auto px-4 sm:px-8 h-16 lg:h-24 flex justify-between items-center">
-          <Link to="/">
+          <Link to="/#home">
             <img src={LogoPrimary} alt="logo-primary" className="h-6 lg:h-8" width="auto" height="32" />
           </Link>
 
