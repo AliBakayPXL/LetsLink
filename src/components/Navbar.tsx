@@ -278,7 +278,7 @@ const Navbar = () => {
               ))}
               <li>
                 <Link
-                  to="/"
+                  to="/Contact#contact"
                   className="inline-block bg-white/10 outline-1 outline-white/40 outline-offset-[-1px] px-7 py-2.5 rounded-full transition-all duration-200 hover:bg-[#3CACD2] hover:outline-none hover:text-primary whitespace-nowrap"
                 >
                   Book a Call
