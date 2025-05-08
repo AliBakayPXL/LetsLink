@@ -17,7 +17,11 @@ const ContentShowcase = () => (
         />
         <div className="flex items-start">
           <BlueCircle>
-            <img src={LightBulb} alt="Bulb Icon" className="w-7 h-7" />
+            <img
+              src={LightBulb}
+              alt="Bulb Icon"
+              className="w-[18px] h-[18px]"
+            />
           </BlueCircle>
           <div>
             <h3 className="font-semibold text-lg text-white mb-1">
@@ -40,7 +44,11 @@ const ContentShowcase = () => (
         </h2>
         <div className="flex items-start">
           <BlueCircle>
-            <img src={QuestionIcon} alt="Info Icon" className="w-7 h-7" />
+            <img
+              src={QuestionIcon}
+              alt="Info Icon"
+              className="w-[18px] h-[18px]"
+            />
           </BlueCircle>
           <div>
             <h3 className="font-semibold text-lg text-white mb-1">
@@ -55,7 +63,7 @@ const ContentShowcase = () => (
         </div>
         <div className="flex items-start">
           <BlueCircle>
-            <img src={GearIcon} alt="Gear Icon" className="w-7 h-7" />
+            <img src={GearIcon} alt="Gear Icon" className="w-[18px] h-[18px]" />
           </BlueCircle>
           <div>
             <h3 className="font-semibold text-lg text-white mb-1">
