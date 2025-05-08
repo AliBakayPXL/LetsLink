@@ -80,25 +80,25 @@ const Footer = () => (
         <h4 className="font-semibold mb-10 text-lg">Products</h4>
         <ul className="space-y-4">
           <li>
-            <Link to="/products/led-bracelet" className="hover:text-[#3CACD2]">
+            <Link to="/products#led-bracelet" className="hover:text-[#3CACD2]">
               LED Bracelet
             </Link>
           </li>
           <li>
-            <Link to="/products/led-lanyard" className="hover:text-[#3CACD2]">
+            <Link to="/products#led-lanyard" className="hover:text-[#3CACD2]">
               LED Lanyard
             </Link>
           </li>
           <li>
             <Link
-              to="/products/rechargeable-bracelet"
+              to="/products#led-rebracelet"
               className="hover:text-[#3CACD2]"
             >
               Rechargeable Bracelet
             </Link>
           </li>
           <li>
-            <Link to="/products/smart-tags" className="hover:text-[#3CACD2]">
+            <Link to="/products#smart-tag" className="hover:text-[#3CACD2]">
               Smart Tags
             </Link>
           </li>
@@ -109,7 +109,7 @@ const Footer = () => (
         <h4 className="font-semibold mb-10 text-lg">Company</h4>
         <ul className="space-y-4">
           <li>
-            <Link to="/experiences" className="hover:text-[#3CACD2]">
+            <Link to="/experiences#hero" className="hover:text-[#3CACD2]">
               Experiences
             </Link>
           </li>
@@ -119,12 +119,12 @@ const Footer = () => (
             </Link>
           </li>
           <li>
-            <Link to="/products" className="hover:text-[#3CACD2]">
+            <Link to="/products#hero" className="hover:text-[#3CACD2]">
               Products
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="hover:text-[#3CACD2]">
+            <Link to="/Contact#contact" className="hover:text-[#3CACD2]">
               Contact Us
             </Link>
           </li>
