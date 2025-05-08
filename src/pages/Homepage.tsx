@@ -5,10 +5,12 @@ import ContentShowcase from "../components/ContentShowcase";
 import Solutions from "../components/Solutions";
 import CTABlock from "../components/CTABlock";
 import ProductsPreview from "../components/ProductsPreview";
+import Navbar from "../components/Navbar";
 
 const Homepage = () => {
   return (
     <main>
+      <Navbar></Navbar>
       <Hero />
       <ExperiencesPreview />
       <HowItWorks />
