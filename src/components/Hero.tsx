@@ -38,7 +38,7 @@ const Hero = () => {
               animate="show"
             >
               <Link
-                to="/contact"
+                to="/contact#contact"
                 className="sm:px-9 px-8 py-3.5 sm:text-xl text-lg rounded-full bg-[#3CACD2] text-primary transition-all duration-200 hover:bg-[#4BC8D0] hover:outline hover:outline-1 hover:outline-[#3CACD2]/40 hover:outline-offset-[-1px]"
               >
                 Get a Free Quote
