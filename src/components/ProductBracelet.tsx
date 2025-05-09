@@ -57,7 +57,7 @@ const ProductBracelet = () => {
               />
             </div>
             
-            <div className="w-1/2 px-4">
+            <div className="w-1/2 px-4 py-8">
               <h1 className="text-4xl font-semibold mb-4 pb-2 border-b border-gray-300">
                 LED Bracelet
               </h1>

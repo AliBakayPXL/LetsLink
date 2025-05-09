@@ -29,7 +29,6 @@ const menuItems: MenuItem[] = [
       { label: "Smart Tags", href: "/products#smart-tag" },
     ],
   },
-  { label: "How It Works", href: "#howitworks" },
   { label: "Experiences", href: "/experiences#hero" },
   { label: "Contact", href: "/contact#contact" },
 ];

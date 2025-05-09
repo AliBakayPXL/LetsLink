@@ -150,7 +150,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="max-w-7xl mx-auto border-t border-gray-600 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-      <span>Copyright © 2025 LetsLink</span>
+      <span>Copyright © 2025 LetsLink - BE:1009.578.374</span>
       <div className="flex gap-4 mt-2 md:mt-0">
         <Link to="/privacy" className="hover:text-[#3CACD2]">
           Privacy Policy

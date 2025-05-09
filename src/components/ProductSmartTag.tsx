@@ -1,5 +1,5 @@
 import React from 'react';
-import SmartTag from "../assets/Lanyard.png"
+import SmartTag from "../assets/photos/productsmarttag.png"
 
 const ProductSmartTag: React.FC = () => {
   return (
@@ -46,7 +46,7 @@ const ProductSmartTag: React.FC = () => {
         
         {/* Desktop layout - Image on right */}
         <div className="hidden md:flex flex-row gap-16 lg:gap-20 items-center">
-          <div className="w-1/2 px-4">
+          <div className="w-1/2 px-4 py-8">
             <h1 className="text-4xl font-semibold mb-4 pb-2 border-b border-gray-300">
               Smart tag
             </h1>

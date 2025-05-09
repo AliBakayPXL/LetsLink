@@ -1,5 +1,5 @@
 import React from 'react';
-import Ball from "../assets/recharchable.png"
+import Ball from "../assets/photos/productledball.png"
 
 const ProductSmartTag: React.FC = () => {
   return (
@@ -54,7 +54,7 @@ const ProductSmartTag: React.FC = () => {
           />
         </div>
         
-        <div className="w-1/2 px-4">
+        <div className="w-1/2 px-4 py-8">
           <h1 className="text-4xl font-semibold mb-4 pb-2 border-b border-gray-300">
           LED-Ball
           </h1>
