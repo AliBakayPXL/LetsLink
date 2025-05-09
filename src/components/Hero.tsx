@@ -25,7 +25,7 @@ const Hero = () => {
               animate="show"
               className="mb-6 text-[3rem] font-bold leading-tight  sm:text-[4.5rem]"
             >
-              Rent LED Bracelets for Events
+              Its Not Just A Product, Its an Experience
             </motion.h1>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -33,7 +33,7 @@ const Hero = () => {
               animate="show"
               className="sm:mb-14 mb-10 text-2xl font-light sm:text-[2rem]"
             >
-              Sync and light up the crowd with our customizable LED bracelets.
+              Sync and light up the crowd with our customizable LED products
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.5)}

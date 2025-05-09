@@ -29,8 +29,10 @@ const HowItWorks = () => (
         <div className="flex-1 flex flex-col justify-center gap-8">
           <h2 className="title">Connect people at events</h2>
           <p className="description">
-            Do you want to create an immersive, interactive experience that
-            makes it easy for guests to connect at your event?
+            LetsLink makes connecting effortless, intuitive, and impactful. Our
+            smart technology links your guests with the right people at the
+            right time and place.LetsLink makes connecting to people easy and
+            exciting.
           </p>
           <ul className="space-y-3">
             <li className="flex items-center">
@@ -40,7 +42,7 @@ const HowItWorks = () => (
                 className="w-5 h-5 mr-3 flex-shrink-0"
               />
               <span className="text-gray-900 font-semibold text-base">
-                Smart match technology
+                AI-Matchmaking
               </span>
             </li>
             <li className="flex items-center">

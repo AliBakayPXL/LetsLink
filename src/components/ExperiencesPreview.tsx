@@ -11,45 +11,41 @@ const ExperiencesPreview = () => {
 
   const solutions = [
     {
+      imageUrl: "images/letslink_4.webp",
+      title: "Concerts & Festivals",
+      description:
+        "LetsLink transforms concerts and festivals with interactive LED tech for stunning light shows and immersive audience engagement.",
+    },
+    {
       imageUrl: "images/letslink_1.webp",
       title: "Corporate Events",
       description:
-        "Light up your event with thousands of color-changing bracelets pulsing in unison.",
+        "LetsLink elevates corporate events with interactive LED wearables and smart features like live networking games, boosting engagement and seamless connections.",
     },
     {
       imageUrl: "images/letslink_2.webp",
       title: "Sporting Events",
       description:
-        "Light up your event with thousands of color-changing bracelets pulsing in unison.",
+        "LetsLink energizes sports events with interactive LED wearables that sync to the action, boosting fan excitement and real-time crowd connection.",
     },
     {
       imageUrl: "images/letslink_3.webp",
       title: "Networking Events",
       description:
-        "Light up your event with thousands of color-changing bracelets pulsing in unison.",
-    },
-    {
-      imageUrl: "images/letslink_4.webp",
-      title: "Concerts & Festivals",
-      description:
-        "Light up your event with thousands of color-changing bracelets pulsing in unison.",
+        "LetsLink makes networking events dynamic with smart LED wearables that enable AI matchmaking, interactive icebreakers and real-time data for the host.",
     },
   ];
 
   return (
     <div className="relative min-h-screen flex flex-col justify-start sm:justify-center items-center py-8 sm:py-16 overflow-x-hidden">
       {/* Decorative background square - only visible on desktop */}
-      <div className="hidden xl:block absolute right-[18rem] bottom-10 w-[72rem] h-[22rem] bg-[#d9e8f4] -z-10" />
+      {/*<div className="hidden xl:block absolute right-[18rem] bottom-10 w-[72rem] h-[22rem] bg-[#d9e8f4] -z-10" />*/}
 
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-6 sm:gap-0">
-          <h1 className="title text-2xl sm:text-3xl lg:text-4xl font-bold max-w-sm">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center w-full sm:whitespace-nowrap">
             Event solutions for every occasion
           </h1>
-          <p className="subtitle text-base sm:text-lg max-w-md text-gray-700">
-            From concerts to corporate gatherings—discover how LetsLink powers
-            unforgettable experiences.
-          </p>
         </div>
 
         {/* Desktop and Tablet View */}
@@ -95,7 +91,7 @@ const ExperiencesPreview = () => {
         </Swiper>
       </div>
 
-      <div className="container flex justify-center mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-4 sm:mt-16">
+      <div className="container flex justify-center mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-4 sm:mt-5">
         <Link to="/experiences#hero" className="btn-primary">
           Event Experiences →
         </Link>
