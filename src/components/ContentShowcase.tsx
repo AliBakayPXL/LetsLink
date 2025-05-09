@@ -15,16 +15,6 @@ const ContentShowcase = () => (
           className="rounded-2xl w-full max-h-[400px] object-cover shadow-lg"
         />
         <div className="flex items-start gap-4">
-          <button
-            className="bg-[#111927] w-12 h-12 rounded-full shadow flex items-center justify-center hover:bg-black"
-            aria-label="Light Bulb"
-          >
-            <img
-              src={LightBulb}
-              alt="Bulb Icon"
-              className="w-[18px] h-[18px]"
-            />
-          </button>
           <div>
             <h3 className="font-semibold text-lg text-white mb-1">
               Why It Matters
@@ -45,16 +35,6 @@ const ContentShowcase = () => (
           connections
         </h2>
         <div className="flex items-start gap-4">
-          <button
-            className="bg-[#111927] w-12 h-12 rounded-full shadow flex items-center justify-center hover:bg-black"
-            aria-label="Info Icon"
-          >
-            <img
-              src={QuestionIcon}
-              alt="Info Icon"
-              className="w-[18px] h-[18px]"
-            />
-          </button>
           <div>
             <h3 className="font-semibold text-lg text-white mb-1">
               What We Do
@@ -67,12 +47,6 @@ const ContentShowcase = () => (
           </div>
         </div>
         <div className="flex items-start gap-4">
-          <button
-            className="bg-[#111927] w-12 h-12 rounded-full shadow flex items-center justify-center hover:bg-black"
-            aria-label="Gear Icon"
-          >
-            <img src={GearIcon} alt="Gear Icon" className="w-[18px] h-[18px]" />
-          </button>
           <div>
             <h3 className="font-semibold text-lg text-white mb-1">
               How It Works

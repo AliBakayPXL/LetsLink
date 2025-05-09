@@ -16,7 +16,7 @@ const products = [
     id: 1,
     tag: "Crowd Synchronization",
     title: "LED Bracelet",
-    desc: "Light up your event with thousands of color-changing bracelets pulsing in unison.",
+    desc: "Light up events and connect attendees with your artist/ sports team. Syncs with music, displays logos in the crowd and enhances engagement.",
     image: Bracelet,
     tagColor: "bg-blue-900",
     tagText: "text-blue-300",
@@ -25,7 +25,7 @@ const products = [
     id: 2,
     tag: "AI Networking",
     title: "Smart Lanyard",
-    desc: "Color-matching tech helps attendees connect effortlessly at conferences and meetups.",
+    desc: "Smart, stylish, and interactive. Uses AI matchmaking to connect attendees effortlessly through the color displayed on their lanyard.",
     image: KleineLanyard,
     tagColor: "bg-blue-900",
     tagText: "text-blue-300",
@@ -34,7 +34,7 @@ const products = [
     id: 3,
     tag: "Sustainable Solution",
     title: "Rechargeable Band",
-    desc: "Eco-friendly wearable tech designed for repeated use across multiple events.",
+    desc: "Our rechargeable bracelets offer the benefits of our regular LED bracelets designed for repeated use",
     image: RecharchableBrace,
     tagColor: "bg-blue-900",
     tagText: "text-blue-300",
@@ -69,21 +69,17 @@ const ProductsPreview: React.FC = () => {
   return (
     <section className="bg-[#f6fbfe] min-h-screen flex justify-center flex-col py-12 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4">
-        {/* Titel & subtitel */}
-        <div className="mb-6">
-          <div className="w-full text-center md:text-left">
-            <h2 className="text-3xl md:text-4xl font-bold mb-2">
+        {/* Titel + navigatie in één flex container */}
+        <div className="mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div className="text-center md:text-left">
+            <h2 className="text-3xl md:text-4xl font-bold mb-1">
               Our products
             </h2>
             <p className="text-lg text-gray-500">
               Wearable Tech That Connects and Impresses
             </p>
           </div>
-        </div>
-
-        {/* Navigatieknoppen (alleen op desktop) */}
-        <div className="hidden md:flex justify-end mb-6">
-          <div className="flex gap-4">
+          <div className="hidden md:flex gap-4">
             <button
               className="bg-[#111927] w-12 h-12 rounded-full shadow flex items-center justify-center hover:bg-black"
               onClick={handlePrev}

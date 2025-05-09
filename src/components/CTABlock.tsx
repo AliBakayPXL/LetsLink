@@ -26,8 +26,9 @@ const CTABlock: React.FC = () => {
       {/* Overlay content */}
       <div className="relative z-10 flex flex-col items-center text-center text-white px-4">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg">
-          Transform Your Event with <br />
-          Smart, Connected Experiences
+          Make Your Event Unforgettable With
+          <br />
+          Seamless Connections and Smart Technology
         </h1>
         <Link
           to="/Contact#contact"
@@ -37,7 +38,7 @@ const CTABlock: React.FC = () => {
         </Link>
       </div>
       {/* Extra donker overlay voor contrast */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/30"></div>
     </section>
   );
 };
