@@ -2,15 +2,17 @@ import React, { useState } from "react";
 import KleineLanyard from "../assets/kleinelanyard.png";
 import RecharchableBrace from "../assets/recharchable.png";
 import Bracelet from "../assets/wb-transparent-600x410-1.webp";
+import ArrowLeft from "../assets/arrow-left.svg";
+import ArrowRight from "../assets/arrow-right.svg";
 
-// Dummy data – vervang door jouw eigen producten
+// Dummy data
 const products = [
   {
     id: 1,
     tag: "Crowd Synchronization",
     title: "LED Bracelet",
     desc: "Light up your event with thousands of color-changing bracelets pulsing in unison.",
-    image: Bracelet, // Zet hier je eigen plaatje!
+    image: Bracelet,
     tagColor: "bg-blue-900",
     tagText: "text-blue-300",
   },
@@ -34,7 +36,7 @@ const products = [
   },
 ];
 
-const visibleCards = 3; // Toon er 3 naast elkaar
+const visibleCards = 3;
 
 const ProductsPreview: React.FC = () => {
   const [index, setIndex] = useState(0);
@@ -47,7 +49,6 @@ const ProductsPreview: React.FC = () => {
     setIndex((prev) => (prev === products.length - 1 ? 0 : prev + 1));
   };
 
-  // Voor infinite loop (carousel effect)
   const getCards = () => {
     const arr = [];
     for (let i = 0; i < visibleCards; i++) {
@@ -56,63 +57,64 @@ const ProductsPreview: React.FC = () => {
     return arr;
   };
 
-  // Ga naar specifieke product/sectie
-  const handleClick = (product: any) => {
-    // Vervang door jouw navigatie
+  const handleClick = (product: (typeof products)[0]) => {
     alert(`Ga naar product: ${product.title}`);
   };
+
   return (
-    <section className="bg-[#f6fbfe] h-screen flex justify-center flex-col">
+    <section className="bg-[#f6fbfe] min-h-screen flex justify-center flex-col">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold mb-2">Our products</h2>
-        <p className="text-lg text-gray-500 mb-10">
-          Wearable Tech That Connects and Impresses
-        </p>
-        <div className="relative flex items-center">
-          {/* Carousel controller - prev */}
-          <button
-            className="absolute -left-10 z-10 bg-white rounded-full shadow p-2 hover:bg-gray-100 transition"
-            onClick={handlePrev}
-            aria-label="Previous"
-          >
-            <span className="text-2xl">&#8592;</span>
-          </button>
-          {/* Carousel */}
-          <div className="flex gap-8 w-full justify-center">
-            {getCards().map((product) => (
-              <div
-                key={product.id}
-                className="bg-[#111927] rounded-2xl p-8 w-80 flex-shrink-0 cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 group"
-                onClick={() => handleClick(product)}
-              >
-                <div className="flex justify-center mb-6">
-                  <img
-                    src={product.image}
-                    alt={product.title}
-                    className="h-24"
-                  />
-                </div>
-                <span
-                  className={`inline-block px-3 py-1 mb-4 rounded-full text-xs font-semibold ${product.tagColor} ${product.tagText}`}
-                >
-                  {product.tag}
-                </span>
-                <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-400 transition-colors">
-                  {product.title}
-                </h3>
-                <div className="w-16 h-1 bg-gray-700 rounded mb-4"></div>
-                <p className="text-gray-300 text-sm">{product.desc}</p>
-              </div>
-            ))}
+        {/* Titel + knoppen */}
+        <div className="flex justify-between items-center mb-10 flex-wrap gap-4">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-2">
+              Our products
+            </h2>
+            <p className="text-lg text-gray-500">
+              Wearable Tech That Connects and Impresses
+            </p>
           </div>
-          {/* Carousel controller - next */}
-          <button
-            className="absolute -right-10 z-10 bg-white rounded-full shadow p-2 hover:bg-gray-100 transition"
-            onClick={handleNext}
-            aria-label="Next"
-          >
-            <span className="text-2xl">&#8594;</span>
-          </button>
+          <div className="flex gap-4">
+            <button
+              className="bg-[#111927] w-12 h-12 rounded-full shadow flex items-center justify-center hover:bg-black hover:outline-none"
+              onClick={handlePrev}
+              aria-label="Previous"
+            >
+              <img src={ArrowLeft} alt="Previous" className="w-5 h-5" />
+            </button>
+            <button
+              className="bg-[#111927] w-12 h-12 rounded-full shadow flex items-center justify-center hover:bg-black hover:outline-none"
+              onClick={handleNext}
+              aria-label="Next"
+            >
+              <img src={ArrowRight} alt="Next" className="w-5 h-5" />
+            </button>
+          </div>
+        </div>
+
+        {/* Carousel */}
+        <div className="flex gap-8 w-full justify-center flex-wrap">
+          {getCards().map((product) => (
+            <div
+              key={product.id}
+              className="bg-[#111927] rounded-2xl p-8 w-80 h-96 flex-shrink-0 cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 group"
+              onClick={() => handleClick(product)}
+            >
+              <div className="flex justify-center mb-6">
+                <img src={product.image} alt={product.title} className="h-24" />
+              </div>
+              <span
+                className={`inline-block px-3 py-1 mb-4 rounded-full text-xs font-semibold ${product.tagColor} ${product.tagText}`}
+              >
+                {product.tag}
+              </span>
+              <h3 className="text-white text-xl font-semibold mb-2 group-hover:text-blue-400 transition-colors">
+                {product.title}
+              </h3>
+              <div className="w-16 h-1 bg-gray-700 rounded mb-4"></div>
+              <p className="text-gray-300 text-sm">{product.desc}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
