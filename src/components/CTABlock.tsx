@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import LetsLinkVideo from "../assets/LetsLink.mp4";
 
 const CTABlock: React.FC = () => {
@@ -28,12 +29,12 @@ const CTABlock: React.FC = () => {
           Transform Your Event with <br />
           Smart, Connected Experiences
         </h1>
-        <a
-          href="#quote"
+        <Link
+          to="/Contact#contact"
           className="px-8 py-4 bg-white/20 hover:bg-white/30 text-white font-semibold rounded-full backdrop-blur-md border border-white transition-all duration-200 text-lg shadow"
         >
           Get a Free Quote &rarr;
-        </a>
+        </Link>
       </div>
       {/* Extra donker overlay voor contrast */}
       <div className="absolute inset-0 bg-black/60"></div>

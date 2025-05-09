@@ -96,7 +96,7 @@ const ExperiencesPreview = () => {
       </div>
 
       <div className="container flex justify-center mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-4 sm:mt-16">
-        <Link to={"/solutions"} className="btn-primary">
+        <Link to="/experiences#hero" className="btn-primary">
           Event Experiences →
         </Link>
       </div>

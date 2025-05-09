@@ -3,7 +3,7 @@ import { FiPhone, FiMapPin, FiMail } from "react-icons/fi";
 
 const ContactForm: React.FC = () => {
   return (
-    <div className="w-full bg-white py-20 px-4 md:px-8">
+    <div id="contact" className="scroll-mt-24 w-full bg-white py-20 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:space-x-12">
           {/* Left: Text and Contact Info */}
