@@ -26,7 +26,7 @@ const Products = () => {
   }, [location]);
 
   return (
-  <main className="pt-24">
+  <main className="pt-24 flex flex-col">
       <ExperienceNavbar/>
       <ProductHero/>
       <ProductBracelet></ProductBracelet>
