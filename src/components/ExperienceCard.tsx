@@ -19,47 +19,26 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const checkIfMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-
-    // Initial check
+    const checkIfMobile = () => setIsMobile(window.innerWidth < 768);
     checkIfMobile();
-
-    // Add event listener
     window.addEventListener("resize", checkIfMobile);
-
-    // Cleanup
     return () => window.removeEventListener("resize", checkIfMobile);
   }, []);
 
-  // Show description when hovered on desktop or when active on mobile
   const shouldShowDescription =
     (isMobile && isActive) || (!isMobile && isHovered);
 
   const contentVariants = {
-    default: {
-      y: 0,
-    },
-    hover: {
-      y: description ? -10 : 0,
-    },
+    default: { y: 0 },
+    hover: { y: description ? -10 : 0 },
   };
 
   const descriptionVariants = {
-    default: {
-      opacity: 0,
-      height: 0,
-    },
+    default: { opacity: 0, height: 0 },
     hover: {
-      opacity: [0, 1],
+      opacity: 1,
       height: "auto",
-      transition: {
-        opacity: {
-          duration: 0.4,
-          ease: "easeInOut",
-        },
-      },
+      transition: { opacity: { duration: 0.4, ease: "easeInOut" } },
     },
   };
 
@@ -76,7 +55,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
 
   return (
     <motion.div
-      className="relative w-full h-[28rem] md:h-[24rem] rounded-[var(--border-radius)] overflow-hidden cursor-pointer"
+      className="relative w-full h-[24rem] sm:h-[26rem] md:h-[24rem] lg:h-[22rem] rounded-2xl overflow-hidden cursor-pointer"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       initial="default"
@@ -92,32 +71,32 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
       <motion.div
         className="absolute inset-0"
         variants={overlayVariants}
+        transition={{ duration: 0.3 }}
         initial="default"
         animate={shouldShowDescription ? "hover" : "default"}
-        transition={{ duration: 0.3 }}
       />
 
-      {/* Content Container */}
+      {/* Content */}
       <motion.div
-        className="relative h-full flex flex-col justify-end p-6"
+        className="relative h-full flex flex-col justify-end p-4 sm:p-6"
         variants={contentVariants}
+        transition={{ duration: 0.3 }}
         initial="default"
         animate={shouldShowDescription ? "hover" : "default"}
-        transition={{ duration: 0.3 }}
       >
-        {/* Title - Always Visible */}
-        <h3 className="text-white text-xl font-bold">{title}</h3>
+        <h3 className="text-white text-lg sm:text-xl font-bold">{title}</h3>
 
-        {/* Description - Visible on Hover */}
         {description && (
           <motion.div
             variants={descriptionVariants}
+            transition={{ duration: 0.2 }}
             initial="default"
             animate={shouldShowDescription ? "hover" : "default"}
-            transition={{ duration: 0.2 }}
           >
-            <div className="w-full h-[0.5px] bg-[#3CACD2] my-3" />
-            <p className="text-white text-sm leading-6">{description}</p>
+            <div className="w-full h-[1px] bg-[#3CACD2] my-2 sm:my-3" />
+            <p className="text-white text-sm sm:text-base leading-6">
+              {description}
+            </p>
           </motion.div>
         )}
       </motion.div>

@@ -37,16 +37,16 @@ const ExperiencesPreview = () => {
   ];
 
   return (
-    <div className="relative min-h-screen flex flex-col justify-start sm:justify-center items-center py-8 sm:py-16">
+    <div className="relative min-h-screen flex flex-col justify-start sm:justify-center items-center py-8 sm:py-16 overflow-x-hidden">
       {/* Decorative background square - only visible on desktop */}
       <div className="hidden xl:block absolute right-[18rem] bottom-10 w-[72rem] h-[22rem] bg-[#d9e8f4] -z-10" />
 
-      <div className="container mx-auto max-w-7xl">
-        <div className="flex sm:justify-between sm:items-end flex-col sm:flex-row px-2 sm:px-0">
-          {" "}
-          {/* Hier voor mobile te doen */}
-          <h1 className="title max-w-sm">Event solutions for every occasion</h1>
-          <p className="subtitle max-w-md">
+      <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-6 sm:gap-0">
+          <h1 className="title text-2xl sm:text-3xl lg:text-4xl font-bold max-w-sm">
+            Event solutions for every occasion
+          </h1>
+          <p className="subtitle text-base sm:text-lg max-w-md text-gray-700">
             From concerts to corporate gatherings—discover how LetsLink powers
             unforgettable experiences.
           </p>
@@ -66,13 +66,13 @@ const ExperiencesPreview = () => {
         </div>
       </div>
 
-      {/* Mobile View with Swiper - full width container */}
-      <div className="md:hidden w-full px-0 overflow-x-visible">
+      {/* Mobile View with Swiper */}
+      <div className="md:hidden w-full px-4 overflow-hidden">
         <Swiper
-          slidesPerView={1.2}
+          slidesPerView={1.1}
           centeredSlides={true}
-          spaceBetween={16}
           initialSlide={1}
+          spaceBetween={16}
           pagination={{
             clickable: true,
             el: ".swiper-pagination",
@@ -82,7 +82,7 @@ const ExperiencesPreview = () => {
           onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
         >
           {solutions.map((solution, index) => (
-            <SwiperSlide key={index} className="w-[80%]">
+            <SwiperSlide key={index}>
               <ExperienceCard
                 imageUrl={solution.imageUrl}
                 title={solution.title}

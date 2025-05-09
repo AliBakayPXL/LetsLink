@@ -4,7 +4,10 @@ import { fadeIn } from "../variants";
 
 const Hero = () => {
   return (
-    <div id="home" className="relative h-[86vh] sm:h-screen bg-[url('/hero-bg.webp')] bg-cover bg-center bg-no-repeat text-secondary">
+    <div
+      id="home"
+      className="relative h-[86vh] sm:h-screen bg-[url('/hero-bg.webp')] bg-cover bg-center bg-no-repeat text-secondary"
+    >
       {/* Semi-transparent overlay */}
       <div className="absolute inset-0 bg-[#0D1821] opacity-50"></div>
 
