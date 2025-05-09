@@ -5,6 +5,8 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
+import HomeConcert from "../assets/photos/homeconcert_v2.webp";
+import HomeSporting from "../assets/photos/homesporting.jpg";
 
 const ExperiencesPreview = () => {
   const [activeIndex, setActiveIndex] = useState(1);
@@ -17,7 +19,7 @@ const ExperiencesPreview = () => {
         "Light up your event with thousands of color-changing bracelets pulsing in unison.",
     },
     {
-      imageUrl: "images/letslink_2.webp",
+      imageUrl: HomeSporting,
       title: "Sporting Events",
       description:
         "Light up your event with thousands of color-changing bracelets pulsing in unison.",
@@ -29,7 +31,7 @@ const ExperiencesPreview = () => {
         "Light up your event with thousands of color-changing bracelets pulsing in unison.",
     },
     {
-      imageUrl: "images/letslink_4.webp",
+      imageUrl: HomeConcert,
       title: "Concerts & Festivals",
       description:
         "Light up your event with thousands of color-changing bracelets pulsing in unison.",

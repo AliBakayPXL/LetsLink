@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import djBracelet from "../assets/djbracelet.jpeg";
-import carglassunizobracelet from "../assets/carglassunizobracelets.png";
+import djBracelet from "../assets/photos/experiencenetworkcorpright.jpeg";
+import carglassunizobracelet from "../assets/photos/experiencenetworkcorpleft.jpg";
 import video from "../assets/LetsLink.mp4";
 
 const ExperienceNetworkCorp: React.FC = () => {

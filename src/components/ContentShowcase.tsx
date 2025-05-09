@@ -1,4 +1,4 @@
-import eventTableImg from "../assets/contentpreviewtable.jpeg";
+import eventTableImg from "../assets/photos/homecontentshowcaseleft.jpeg";
 import braceletImg from "../assets/contentpreviewbracelet.jpeg";
 import LightBulb from "../assets/lightbulb.svg";
 import GearIcon from "../assets/gears.svg";

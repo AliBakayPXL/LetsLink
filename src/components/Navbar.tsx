@@ -19,8 +19,9 @@ const menuItems: MenuItem[] = [
     href: "/products#hero",
     subItems: [
       { label: "Overview", href: "/products#hero" },
-      { label: "Led-Bracelet", href: "/products#led-bracelet" },
-      { label: "Led-Lanyard", href: "/products#led-lanyard" },
+      { label: "Led Bracelet", href: "/products#led-bracelet" },
+      { label: "Led Lanyard", href: "/products#led-lanyard" },
+      { label: "Led Ball", href: "/products#led-ball" },
       {
         label: "Rechargeable bracelet",
         href: "/products#led-rebracelet",

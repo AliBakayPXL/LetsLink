@@ -16,7 +16,7 @@ const HowItWorks = () => (
           />
           <div className="absolute bottom-6 left-6">
             <a
-              href="https://www.youtube.com/watch?v=G1hKzCkywM8"
+              href="https://www.youtube.com/watch?v=9fNVWD8bHzU"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white text-base font-semibold flex items-center gap-5 bg-black/50 px-4 py-2 rounded-full hover:bg-[#3CACD2] transition-all"
