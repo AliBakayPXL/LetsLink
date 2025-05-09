@@ -1,35 +1,12 @@
 import SeeInAction from "../assets/seeinaction.jpeg";
-const CheckIcon = () => (
-  <svg
-    className="w-5 h-5 text-[#3CACD2] mr-3 flex-shrink-0"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth={2}
-    viewBox="0 0 24 24"
-  >
-    <circle
-      cx="12"
-      cy="12"
-      r="10"
-      stroke="#3CACD2"
-      strokeWidth="2"
-      fill="#eaf1f5"
-    />
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      d="M9 12l2 2 4-4"
-      stroke="#3CACD2"
-      strokeWidth={2}
-    />
-  </svg>
-);
+import Check from "../assets/check.svg";
+
 const HowItWorks = () => (
   <section className="h-screen flex justify-center flex-col px-4 md:px-8">
     {/* Hier kan je de hele component aanpassen */}
     <div className="max-w-7xl mx-auto">
       {/* Hier gap aanpassen tussen afbeelding en tekst */}
-      <div className="flex flex-col md:flex-row items-start md:items-center gap-14 md:gap-40">
+      <div className="flex flex-col md:flex-row items-start gap-14 md:gap-40">
         {/* Afbeelding */}
         <div className="relative w-full md:w-[640px] flex-shrink-0">
           <img
@@ -57,19 +34,31 @@ const HowItWorks = () => (
           </p>
           <ul className="space-y-3">
             <li className="flex items-center">
-              <CheckIcon />
+              <img
+                src={Check}
+                alt="check"
+                className="w-5 h-5 mr-3 flex-shrink-0"
+              />
               <span className="text-gray-900 font-semibold text-base">
                 Smart match technology
               </span>
             </li>
             <li className="flex items-center">
-              <CheckIcon />
+              <img
+                src={Check}
+                alt="check"
+                className="w-5 h-5 mr-3 flex-shrink-0"
+              />
               <span className="text-gray-900 font-semibold text-base">
                 Frictionless networking
               </span>
             </li>
             <li className="flex items-center">
-              <CheckIcon />
+              <img
+                src={Check}
+                alt="check"
+                className="w-5 h-5 mr-3 flex-shrink-0"
+              />
               <span className="text-gray-900 font-semibold text-base">
                 Events that truly engage
               </span>

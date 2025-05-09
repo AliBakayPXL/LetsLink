@@ -1,6 +1,5 @@
 import eventTableImg from "../assets/contentpreviewtable.jpeg";
 import braceletImg from "../assets/contentpreviewbracelet.jpeg";
-import BlueCircle from "./BlueCircle";
 import LightBulb from "../assets/lightbulb.svg";
 import GearIcon from "../assets/gears.svg";
 import QuestionIcon from "../assets/question-mark.svg";
@@ -15,14 +14,17 @@ const ContentShowcase = () => (
           alt="Event Table"
           className="rounded-2xl w-full max-h-[400px] object-cover shadow-lg"
         />
-        <div className="flex items-start">
-          <BlueCircle>
+        <div className="flex items-start gap-4">
+          <button
+            className="bg-[#111927] w-12 h-12 rounded-full shadow flex items-center justify-center hover:bg-black"
+            aria-label="Light Bulb"
+          >
             <img
               src={LightBulb}
               alt="Bulb Icon"
               className="w-[18px] h-[18px]"
             />
-          </BlueCircle>
+          </button>
           <div>
             <h3 className="font-semibold text-lg text-white mb-1">
               Why It Matters
@@ -42,14 +44,17 @@ const ContentShowcase = () => (
           <br className="hidden md:block" />
           connections
         </h2>
-        <div className="flex items-start">
-          <BlueCircle>
+        <div className="flex items-start gap-4">
+          <button
+            className="bg-[#111927] w-12 h-12 rounded-full shadow flex items-center justify-center hover:bg-black"
+            aria-label="Info Icon"
+          >
             <img
               src={QuestionIcon}
               alt="Info Icon"
               className="w-[18px] h-[18px]"
             />
-          </BlueCircle>
+          </button>
           <div>
             <h3 className="font-semibold text-lg text-white mb-1">
               What We Do
@@ -61,10 +66,13 @@ const ContentShowcase = () => (
             </p>
           </div>
         </div>
-        <div className="flex items-start">
-          <BlueCircle>
+        <div className="flex items-start gap-4">
+          <button
+            className="bg-[#111927] w-12 h-12 rounded-full shadow flex items-center justify-center hover:bg-black"
+            aria-label="Gear Icon"
+          >
             <img src={GearIcon} alt="Gear Icon" className="w-[18px] h-[18px]" />
-          </BlueCircle>
+          </button>
           <div>
             <h3 className="font-semibold text-lg text-white mb-1">
               How It Works
@@ -85,4 +93,5 @@ const ContentShowcase = () => (
     </div>
   </section>
 );
+
 export default ContentShowcase;
