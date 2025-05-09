@@ -5,6 +5,8 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
+import HomeConcert from "../assets/photos/homeconcert_v2.webp";
+import HomeSporting from "../assets/photos/homesporting.jpg";
 
 const ExperiencesPreview = () => {
   const [activeIndex, setActiveIndex] = useState(1);
@@ -23,7 +25,7 @@ const ExperiencesPreview = () => {
         "LetsLink elevates corporate events with interactive LED wearables and smart features like live networking games, boosting engagement and seamless connections.",
     },
     {
-      imageUrl: "images/letslink_2.webp",
+      imageUrl: HomeSporting,
       title: "Sporting Events",
       description:
         "LetsLink energizes sports events with interactive LED wearables that sync to the action, boosting fan excitement and real-time crowd connection.",
@@ -32,7 +34,17 @@ const ExperiencesPreview = () => {
       imageUrl: "images/letslink_3.webp",
       title: "Networking Events",
       description:
+<<<<<<< HEAD
         "LetsLink makes networking events dynamic with smart LED wearables that enable AI matchmaking, interactive icebreakers and real-time data for the host.",
+=======
+        "Light up your event with thousands of color-changing bracelets pulsing in unison.",
+    },
+    {
+      imageUrl: HomeConcert,
+      title: "Concerts & Festivals",
+      description:
+        "Light up your event with thousands of color-changing bracelets pulsing in unison.",
+>>>>>>> de619c721b89e100881c3f355e2947aa8c352fe4
     },
   ];
 

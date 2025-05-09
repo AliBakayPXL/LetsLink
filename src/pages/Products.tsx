@@ -3,7 +3,8 @@ import ProductHero from "../components/ProductHero";
 import ProductBracelet from "../components/ProductBracelet";
 import ProductLanyard from "../components/ProductLanyard";
 import ProductRebracelet from "../components/ProductRebracelet";
-import ProductSmartTag from "..//components/ProductSmartTag";
+import ProductSmartTag from "../components/ProductSmartTag";
+import ProductBall from "../components/ProductBall"
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -33,6 +34,7 @@ const Products = () => {
       <ProductLanyard></ProductLanyard>
       <ProductRebracelet></ProductRebracelet>
       <ProductSmartTag></ProductSmartTag>
+      <ProductBall></ProductBall>
     </main>
   )
 };

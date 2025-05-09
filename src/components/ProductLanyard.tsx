@@ -1,4 +1,4 @@
-import Lanyard from "../assets/Lanyard.png"
+import Lanyard from "../assets/photos/productrebracelet.png"
 
 const ProductLanyard = () => {
     return (
@@ -45,7 +45,7 @@ const ProductLanyard = () => {
         
         {/* Desktop layout - Image on right */}
         <div className="hidden md:flex flex-row gap-16 lg:gap-20 items-center">
-          <div className="w-1/2 px-4">
+          <div className="w-1/2 px-4 py-8">
             <h1 className="text-4xl font-semibold mb-4 pb-2 border-b border-gray-300">
               LED Lanyard
             </h1>

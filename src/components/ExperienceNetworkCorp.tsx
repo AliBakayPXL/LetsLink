@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import djBracelet from "../assets/djbracelet.jpeg";
-import carglassunizobracelet from "../assets/carglassunizobracelets.png";
-import video from "../assets/LetsLink.mp4";
+import djBracelet from "../assets/photos/experiencenetworkcorpright.jpeg";
+import carglassunizobracelet from "../assets/photos/experiencenetworkcorpleft.jpg";
+import bottomphoto from "../assets/photos/experiencenetworkcorpbottom.jpg";
 
 const ExperienceNetworkCorp: React.FC = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
@@ -59,14 +59,11 @@ const ExperienceNetworkCorp: React.FC = () => {
             <div 
               className="relative"
             >
-              <video 
-                src={video} 
-                className="w-full h-80 object-cover rounded-lg"
-                autoPlay
-                loop
-                muted
-                playsInline
-              />
+              <img 
+                  src={bottomphoto} 
+                  alt="Blue LED wearable with corporate branding" 
+                  className="w-full h-64 object-cover rounded-lg"
+                />
             </div>
           </div>
 

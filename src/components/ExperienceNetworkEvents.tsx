@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import tableWithWineGlasses from "../assets/tablewithwineglasses.jpeg";
-import yellowBracelets from "../assets/yellowbracelets.jpeg";
+import yellowBracelets from "../assets/photos/experiencenetworkeventright.jpeg";
 import video from "../assets/LetsLink.mp4";
 
 

@@ -19,8 +19,9 @@ const menuItems: MenuItem[] = [
     href: "/products#hero",
     subItems: [
       { label: "Overview", href: "/products#hero" },
-      { label: "Led-Bracelet", href: "/products#led-bracelet" },
-      { label: "Led-Lanyard", href: "/products#led-lanyard" },
+      { label: "Led Bracelet", href: "/products#led-bracelet" },
+      { label: "Led Lanyard", href: "/products#led-lanyard" },
+      { label: "Led Ball", href: "/products#led-ball" },
       {
         label: "Rechargeable bracelet",
         href: "/products#led-rebracelet",
@@ -28,7 +29,6 @@ const menuItems: MenuItem[] = [
       { label: "Smart Tags", href: "/products#smart-tag" },
     ],
   },
-  { label: "How It Works", href: "#howitworks" },
   { label: "Experiences", href: "/experiences#hero" },
   { label: "Contact", href: "/contact#contact" },
 ];
