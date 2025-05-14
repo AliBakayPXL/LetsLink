@@ -33,8 +33,8 @@ const products = [
   {
     id: 3,
     tag: "Sustainable Solution",
-    title: "Rechargeable Band",
-    desc: "Our rechargeable bracelets offer the benefits of our regular LED bracelets designed for repeated use",
+    title: "Rechargeable Bracelet",
+    desc: "Our rechargeable bracelets offer the benefits of our regular LED bracelets designed for repeated use.",
     image: RecharchableBrace,
     tagColor: "bg-blue-900",
     tagText: "text-blue-300",

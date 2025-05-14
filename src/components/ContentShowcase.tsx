@@ -16,12 +16,12 @@ const ContentShowcase = () => (
         />
         <div className="flex items-start gap-4">
           <div>
-            <h3 className="font-semibold text-lg text-white mb-1">
-              Why It Matters
-            </h3>
+            <h3 className="font-semibold text-lg text-white mb-1">Why</h3>
             <p className="text-gray-300 text-base">
-              We make every event more engaging for attendees, more valuable for
-              brands, and easier to manage for organizers.
+              We believe that events are about more than just being there. They
+              are about connecting, sharing moments, and creating memories.
+              LetsLink exists to make every connection effortless and every
+              experience unforgettable.
             </p>
           </div>
         </div>
@@ -36,25 +36,23 @@ const ContentShowcase = () => (
         </h2>
         <div className="flex items-start gap-4">
           <div>
-            <h3 className="font-semibold text-lg text-white mb-1">
-              What We Do
-            </h3>
+            <h3 className="font-semibold text-lg text-white mb-1">How</h3>
             <p className="text-gray-300 text-base">
-              Immersive experiences through smart wearables –<br />
-              from networking lanyards to crowd-synced LED bracelets that light
-              up your event.
+              By combining smart LED wearables with real-time data and NFC
+              technology, we bring people together in ways that feel natural and
+              exciting. Our solutions light up crowds, streamline networking,
+              and make events safer, smoother, and more interactive.
             </p>
           </div>
         </div>
         <div className="flex items-start gap-4">
           <div>
-            <h3 className="font-semibold text-lg text-white mb-1">
-              How It Works
-            </h3>
+            <h3 className="font-semibold text-lg text-white mb-1">What</h3>
             <p className="text-gray-300 text-base">
-              Our tech connects guests automatically while transforming crowds
-              into dazzling light displays, with added tools for payments and
-              crowd control.
+              We provide LED products designed to enhance engagement, manage
+              crowds, and simplify payments. Each product is customizable,
+              rechargeable, and built to transform your event into a seamless,
+              connected experience
             </p>
           </div>
         </div>

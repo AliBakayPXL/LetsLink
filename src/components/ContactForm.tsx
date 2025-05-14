@@ -3,17 +3,20 @@ import { FiPhone, FiMapPin, FiMail } from "react-icons/fi";
 
 const ContactForm: React.FC = () => {
   return (
-    <div id="contact" className="scroll-mt-24 w-full bg-white py-20 px-4 md:px-8">
+    <div
+      id="contact"
+      className="scroll-mt-24 w-full bg-white py-20 px-4 md:px-8"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:space-x-12">
           {/* Left: Text and Contact Info */}
           <div className="md:w-1/2 pr-0 md:pr-8 mb-12 md:mb-0 flex flex-col justify-between">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              Power your next event together
+              Ready to light up your event?
             </h1>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
-              Whether it's a concert, corporate event, or networking meetup,
-              LetsLink helps you harness the power of smart wearables.
+              Contact us to discover how LetsLink can transform your experience
+              with smart technology and seamless connections.
             </p>
 
             <div className="space-y-6 text-gray-900">

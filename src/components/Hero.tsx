@@ -36,7 +36,7 @@ const Hero = () => {
               animate="show"
               className="mb-6 text-[3rem] font-bold leading-tight sm:text-[4.5rem]"
             >
-              Its Not Just A Product, Its an Experience
+              Its Not Just A Product, Its An Experience
             </motion.h1>
             <motion.p
               variants={fadeIn("up", 0.4)}
