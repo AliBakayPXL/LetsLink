@@ -34,9 +34,6 @@ const ExperiencesPreview = () => {
       imageUrl: "images/letslink_3.webp",
       title: "Networking Events",
       description:
-<<<<<<< HEAD
-        "LetsLink makes networking events dynamic with smart LED wearables that enable AI matchmaking, interactive icebreakers and real-time data for the host.",
-=======
         "Light up your event with thousands of color-changing bracelets pulsing in unison.",
     },
     {
@@ -44,7 +41,6 @@ const ExperiencesPreview = () => {
       title: "Concerts & Festivals",
       description:
         "Light up your event with thousands of color-changing bracelets pulsing in unison.",
->>>>>>> de619c721b89e100881c3f355e2947aa8c352fe4
     },
   ];
 

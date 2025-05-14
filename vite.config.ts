@@ -9,4 +9,11 @@ export default defineConfig({
     host: true,
   },
   base: "./",
+  optimizeDeps: {
+    include: [ 'swiper',
+      'swiper/react',
+      'swiper/modules',
+      'swiper/css',
+      'swiper/css/pagination'],
+  },
 });
