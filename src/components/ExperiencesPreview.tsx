@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ExperienceCard from "./ExperienceCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
@@ -34,7 +34,13 @@ const ExperiencesPreview = () => {
       imageUrl: "images/letslink_3.webp",
       title: "Networking Events",
       description:
-        "LetsLink makes networking events dynamic with smart LED wearables that enable AI matchmaking, interactive icebreakers and real-time data for the host. Light up your event with thousands of color-changing bracelets pulsing in unison.",
+        "Light up your event with thousands of color-changing bracelets pulsing in unison.",
+    },
+    {
+      imageUrl: HomeConcert,
+      title: "Concerts & Festivals",
+      description:
+        "Light up your event with thousands of color-changing bracelets pulsing in unison.",
     },
   ];
 
