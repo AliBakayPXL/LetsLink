@@ -1,4 +1,3 @@
-import React from "react";
 import Handshake from "../assets/handshake.svg";
 import Lightbulb from "../assets/lightbulb-shining.svg";
 import Tag from "../assets/tag.svg";
