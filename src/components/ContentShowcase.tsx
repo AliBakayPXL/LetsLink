@@ -1,8 +1,5 @@
 import eventTableImg from "../assets/photos/homecontentshowcaseleft.jpeg";
 import braceletImg from "../assets/contentpreviewbracelet.jpeg";
-import LightBulb from "../assets/lightbulb.svg";
-import GearIcon from "../assets/gears.svg";
-import QuestionIcon from "../assets/question-mark.svg";
 
 const ContentShowcase = () => (
   <section className="bg-[#131c23] min-h-screen flex flex-col justify-start sm:justify-center items-center py-8 sm:py-16 px-4">
