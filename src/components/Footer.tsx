@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import LogoPrimary from "../assets/logo.png"; // Pas aan indien je pad anders is
+import LogoPrimary from "../assets/logo.webp"; // Pas aan indien je pad anders is
 
 // Je kunt deze SVG-iconen ook als losse componenten importeren, of uit een icon-library halen!
 /*const LocationIcon = () => (

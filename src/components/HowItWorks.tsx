@@ -1,4 +1,4 @@
-import SeeInAction from "../assets/seeinaction.jpeg";
+import SeeInAction from "../assets/seeinaction.webp";
 import Check from "../assets/check.svg";
 
 const HowItWorks = () => (

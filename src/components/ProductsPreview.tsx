@@ -4,8 +4,8 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import KleineLanyard from "../assets/kleinelanyard.png";
-import RecharchableBrace from "../assets/recharchable.png";
+import Lanyard from "../assets/photos/productrebracelet.png";
+import RecharchableBrace from "../assets/recharchable.webp";
 import Bracelet from "../assets/wb-transparent-600x410-1.webp";
 import ArrowLeft from "../assets/arrow-left.svg";
 import ArrowRight from "../assets/arrow-right.svg";
@@ -26,7 +26,7 @@ const products = [
     tag: "AI Networking",
     title: "Smart Lanyard",
     desc: "Smart, stylish, and interactive. Uses AI matchmaking to connect attendees effortlessly through the color displayed on their lanyard.",
-    image: KleineLanyard,
+    image: Lanyard,
     tagColor: "bg-blue-900",
     tagText: "text-blue-300",
   },

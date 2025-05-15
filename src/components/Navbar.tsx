@@ -1,6 +1,6 @@
 import { useState, useCallback, memo, useEffect } from "react";
 import { Link } from "react-router-dom";
-import LogoPrimary from "../assets/logo.png";
+import LogoPrimary from "../assets/logo.webp";
 
 interface MenuItem {
   label: string;

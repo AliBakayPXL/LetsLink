@@ -36,12 +36,6 @@ const ExperiencesPreview = () => {
       description:
         "Light up your event with thousands of color-changing bracelets pulsing in unison.",
     },
-    {
-      imageUrl: HomeConcert,
-      title: "Concerts & Festivals",
-      description:
-        "Light up your event with thousands of color-changing bracelets pulsing in unison.",
-    },
   ];
 
   return (
