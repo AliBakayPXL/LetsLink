@@ -1,4 +1,4 @@
-import eventTableImg from "../assets/photos/homecontentshowcaseleft.jpeg";
+import eventTableImg from "../assets/photos/homecontentshowcaseleft.webp";
 import braceletImg from "../assets/contentpreviewbracelet.webp";
 
 const ContentShowcase = () => (

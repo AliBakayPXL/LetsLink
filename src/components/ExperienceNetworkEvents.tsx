@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import tableWithWineGlasses from "../assets/tablewithwineglasses.webp";
-import yellowBracelets from "../assets/photos/experiencenetworkeventright.jpeg";
+import yellowBracelets from "../assets/photos/experiencenetworkeventright.webp";
 import video from "../assets/LetsLink.mp4";
 
 const ExperienceNetworkEvents: React.FC = () => {

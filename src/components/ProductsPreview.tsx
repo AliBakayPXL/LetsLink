@@ -4,7 +4,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import Lanyard from "../assets/photos/productrebracelet.png";
+import Lanyard from "../assets/photos/productrebracelet.webp";
 import RecharchableBrace from "../assets/recharchable.webp";
 import Bracelet from "../assets/wb-transparent-600x410-1.webp";
 import ArrowLeft from "../assets/arrow-left.svg";

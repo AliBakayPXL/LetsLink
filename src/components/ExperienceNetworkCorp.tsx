@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import djBracelet from "../assets/photos/experiencenetworkcorpright.jpeg";
-import carglassunizobracelet from "../assets/photos/experiencenetworkcorpleft.jpg";
-import bottomphoto from "../assets/photos/experiencenetworkcorpbottom.jpg";
+import djBracelet from "../assets/photos/experiencenetworkcorpright.webp";
+import carglassunizobracelet from "../assets/photos/experiencenetworkcorpleft.webp";
+import bottomphoto from "../assets/photos/experiencenetworkcorpbottom.webp";
 
 const ExperienceNetworkCorp: React.FC = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);

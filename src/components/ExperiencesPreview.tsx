@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Link } from "react-router-dom";
 import HomeConcert from "../assets/photos/homeconcert_v2.webp";
-import HomeSporting from "../assets/photos/homesporting.jpg";
+import HomeSporting from "../assets/photos/homesporting.webp";
 
 const ExperiencesPreview = () => {
   const [activeIndex, setActiveIndex] = useState(1);
