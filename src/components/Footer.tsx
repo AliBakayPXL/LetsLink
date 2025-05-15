@@ -85,8 +85,8 @@ const Footer = () => (
             </Link>
           </li>
           <li>
-            <Link to="/products#led-lanyard" className="hover:text-[#3CACD2]">
-              LED Lanyard
+            <Link to="/products#led-nylon" className="hover:text-[#3CACD2]">
+              Nylon LED Bracelet
             </Link>
           </li>
           <li>

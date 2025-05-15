@@ -3,7 +3,7 @@ import Lanyard from "../assets/photos/productrebracelet.webp";
 const ProductLanyard = () => {
   return (
     <div
-      id="led-lanyard"
+      id="led-nylon"
       className="scroll-mt-16 bg-white flex justify-center items-center py-12 md:py-16 px-4"
     >
       <div className="max-w-6xl w-full">

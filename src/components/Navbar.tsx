@@ -20,7 +20,7 @@ const menuItems: MenuItem[] = [
     subItems: [
       { label: "Overview", href: "/products#hero" },
       { label: "Led Bracelet", href: "/products#led-bracelet" },
-      { label: "Led Lanyard", href: "/products#led-lanyard" },
+      { label: "Led Nylon Bracelet", href: "/products#led-nylon" },
       { label: "Led Ball", href: "/products#led-ball" },
       {
         label: "Rechargeable bracelet",
