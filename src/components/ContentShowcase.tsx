@@ -11,16 +11,15 @@ const ContentShowcase = () => (
           alt="Event Table"
           className="rounded-2xl w-full max-h-[400px] object-cover shadow-lg"
         />
-        <div className="flex items-start gap-4">
-          <div>
-            <h3 className="font-semibold text-lg text-white mb-1">Why</h3>
-            <p className="text-gray-300 text-base">
-              We believe that events are about more than just being there. They
-              are about connecting, sharing moments, and creating memories.
-              LetsLink exists to make every connection effortless and every
-              experience unforgettable.
-            </p>
-          </div>
+        <div className="flex items-start gap-4"></div>
+        <div>
+          <h3 className="font-semibold text-lg text-white mb-1">What</h3>
+          <p className="text-gray-300 text-base">
+            We provide LED products designed to enhance engagement, manage
+            crowds, and simplify payments. Each product is customizable,
+            rechargeable, and built to transform your event into a seamless,
+            connected experience
+          </p>
         </div>
       </div>
 
@@ -33,23 +32,23 @@ const ContentShowcase = () => (
         </h2>
         <div className="flex items-start gap-4">
           <div>
+            <h3 className="font-semibold text-lg text-white mb-1">Why</h3>
+            <p className="text-gray-300 text-base">
+              We believe that events are about more than just being there. They
+              are about connecting, sharing moments, and creating memories.
+              LetsLink exists to make every connection effortless and every
+              experience unforgettable.
+            </p>
+          </div>
+        </div>
+        <div className="flex items-start gap-4">
+          <div>
             <h3 className="font-semibold text-lg text-white mb-1">How</h3>
             <p className="text-gray-300 text-base">
               By combining smart LED wearables with real-time data and NFC
               technology, we bring people together in ways that feel natural and
               exciting. Our solutions light up crowds, streamline networking,
               and make events safer, smoother, and more interactive.
-            </p>
-          </div>
-        </div>
-        <div className="flex items-start gap-4">
-          <div>
-            <h3 className="font-semibold text-lg text-white mb-1">What</h3>
-            <p className="text-gray-300 text-base">
-              We provide LED products designed to enhance engagement, manage
-              crowds, and simplify payments. Each product is customizable,
-              rechargeable, and built to transform your event into a seamless,
-              connected experience
             </p>
           </div>
         </div>
