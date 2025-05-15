@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
@@ -12,7 +13,6 @@ import Ball from "../assets/photos/productledball.webp";
 import ArrowLeft from "../assets/arrow-left.svg";
 import ArrowRight from "../assets/arrow-right.svg";
 
-// Dummy data
 const products = [
   {
     id: 1,
@@ -22,15 +22,17 @@ const products = [
     image: Bracelet,
     tagColor: "bg-blue-900",
     tagText: "text-blue-300",
+    path: "#led-bracelet",
   },
   {
     id: 2,
     tag: "AI Networking",
-    title: "Smart Lanyard",
+    title: "LED Lanyard",
     desc: "Smart, stylish, and interactive. Uses AI matchmaking to connect attendees effortlessly through the color displayed on their lanyard.",
     image: Lanyard,
     tagColor: "bg-blue-900",
     tagText: "text-blue-300",
+    path: "#led-lanyard",
   },
   {
     id: 3,
@@ -40,6 +42,7 @@ const products = [
     image: RecharchableBrace,
     tagColor: "bg-blue-900",
     tagText: "text-blue-300",
+    path: "#led-rebracelet",
   },
   {
     id: 4,
@@ -49,6 +52,7 @@ const products = [
     image: SmartTag,
     tagColor: "bg-blue-900",
     tagText: "text-blue-300",
+    path: "#smart-tag",
   },
   {
     id: 5,
@@ -58,6 +62,7 @@ const products = [
     image: Ball,
     tagColor: "bg-blue-900",
     tagText: "text-blue-300",
+    path: "#led-ball",
   },
 ];
 
@@ -82,14 +87,10 @@ const ProductsPreview: React.FC = () => {
     return arr;
   };
 
-  const handleClick = (product: (typeof products)[0]) => {
-    alert(`Ga naar product: ${product.title}`);
-  };
-
   return (
     <section className="bg-[#f6fbfe] min-h-screen flex justify-center flex-col py-12 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4">
-        {/* Titel + navigatie in één flex container */}
+        {/* Titel + navigatie */}
         <div className="mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div className="text-center md:text-left">
             <h2 className="text-3xl md:text-4xl font-bold mb-1">
@@ -117,13 +118,13 @@ const ProductsPreview: React.FC = () => {
           </div>
         </div>
 
-        {/* Desktop View */}
+        {/* Desktop view */}
         <div className="hidden md:flex gap-8 w-full justify-center flex-wrap">
           {getCards().map((product) => (
-            <div
+            <Link
               key={product.id}
+              to={`/products${product.path}`}
               className="bg-[#111927] rounded-2xl p-8 w-80 h-96 flex-shrink-0 cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 group"
-              onClick={() => handleClick(product)}
             >
               <div className="flex justify-center mb-6">
                 <img src={product.image} alt={product.title} className="h-24" />
@@ -138,11 +139,11 @@ const ProductsPreview: React.FC = () => {
               </h3>
               <div className="w-16 h-1 bg-gray-700 rounded mb-4"></div>
               <p className="text-gray-300 text-sm">{product.desc}</p>
-            </div>
+            </Link>
           ))}
         </div>
 
-        {/* Mobile View (Swiper) */}
+        {/* Mobile view (Swiper) */}
         <div className="md:hidden w-full px-4 overflow-hidden">
           <Swiper
             slidesPerView={1.1}
@@ -155,9 +156,9 @@ const ProductsPreview: React.FC = () => {
           >
             {products.map((product) => (
               <SwiperSlide key={product.id} className="w-[80%]">
-                <div
-                  className="bg-[#111927] rounded-2xl p-8 h-96 cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 group"
-                  onClick={() => handleClick(product)}
+                <Link
+                  to={`/products${product.path}`}
+                  className="bg-[#111927] rounded-2xl p-8 h-96 cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300 group block"
                 >
                   <div className="flex justify-center mb-6">
                     <img
@@ -176,7 +177,7 @@ const ProductsPreview: React.FC = () => {
                   </h3>
                   <div className="w-16 h-1 bg-gray-700 rounded mb-4"></div>
                   <p className="text-gray-300 text-sm">{product.desc}</p>
-                </div>
+                </Link>
               </SwiperSlide>
             ))}
             <div className="swiper-pagination mt-6"></div>
