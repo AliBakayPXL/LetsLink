@@ -7,6 +7,8 @@ import "swiper/css/pagination";
 import Lanyard from "../assets/photos/productrebracelet.webp";
 import RecharchableBrace from "../assets/recharchable.webp";
 import Bracelet from "../assets/wb-transparent-600x410-1.webp";
+import SmartTag from "../assets/photos/productsmarttag.webp";
+import Ball from "../assets/photos/productledball.webp";
 import ArrowLeft from "../assets/arrow-left.svg";
 import ArrowRight from "../assets/arrow-right.svg";
 
@@ -36,6 +38,24 @@ const products = [
     title: "Rechargeable Bracelet",
     desc: "Our rechargeable bracelets offer the benefits of our regular LED bracelets designed for repeated use.",
     image: RecharchableBrace,
+    tagColor: "bg-blue-900",
+    tagText: "text-blue-300",
+  },
+  {
+    id: 4,
+    tag: "Event Essentials",
+    title: "Smart Tag",
+    desc: "Streamline your event with our NFC smart tag—perfect for contactless payments, access control, and digital ticketing. Ideal for festivals, expos, and conferences.",
+    image: SmartTag,
+    tagColor: "bg-blue-900",
+    tagText: "text-blue-300",
+  },
+  {
+    id: 5,
+    tag: "Eco-Friendly Glow",
+    title: "Led-Ball",
+    desc: "Brighten your brand with a rechargeable LED wristband. Built for multi-day events and eco-conscious organizers who value sustainability and style.",
+    image: Ball,
     tagColor: "bg-blue-900",
     tagText: "text-blue-300",
   },
