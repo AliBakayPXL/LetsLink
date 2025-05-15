@@ -2,7 +2,7 @@ import SeeInAction from "../assets/seeinaction.webp";
 import Check from "../assets/check.svg";
 
 const HowItWorks = () => (
-  <section className="h-screen flex justify-center flex-col px-4 md:px-8">
+  <section className="min-h-screen pb-8 flex justify-center flex-col px-4 md:px-8">
     {/* Hier kan je de hele component aanpassen */}
     <div className="max-w-7xl mx-auto">
       {/* Hier gap aanpassen tussen afbeelding en tekst */}
