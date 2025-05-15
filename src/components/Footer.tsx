@@ -142,7 +142,7 @@ const Footer = () => (
           />
           <button
             type="submit"
-            className="bg-[#3CACD2] text-white rounded px-3 py-2 font-semibold hover:opacity-90 transition-all"
+            className="bg-[#3CACD2] text-white rounded px-3 py-2 font-semibold hover:opacity-90 transition-all cursor-pointer"
           >
             Subscribe Now &rarr;
           </button>
@@ -152,11 +152,11 @@ const Footer = () => (
     <div className="max-w-7xl mx-auto border-t border-gray-600 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
       <span>Copyright © 2025 LetsLink - BE:1009.578.374</span>
       <div className="flex gap-4 mt-2 md:mt-0">
-        <Link to="/privacy" className="hover:text-[#3CACD2]">
+        <Link to="/#home" className="hover:text-[#3CACD2]">
           Privacy Policy
         </Link>
         <span>|</span>
-        <Link to="/terms" className="hover:text-[#3CACD2]">
+        <Link to="/#home" className="hover:text-[#3CACD2]">
           Terms of Service
         </Link>
       </div>

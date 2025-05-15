@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import HeroVideo from "../assets/videos/herovideo.mp4";
+import HeroVideo from "../assets/videos/background_video_two.mp4";
 
 const Hero = () => {
   return (

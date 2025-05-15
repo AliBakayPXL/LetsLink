@@ -27,7 +27,7 @@ const ContactForm: React.FC = () => {
                   </span>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-semibold">+32 468 31 28 31</h3>
+                  <a className="text-lg font-semibold" href="tel:+32468312831">+32 468 31 28 31</a>
                 </div>
               </div>
 
@@ -38,9 +38,9 @@ const ContactForm: React.FC = () => {
                   </span>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-semibold">
+                  <a href="https://www.google.com/maps?q=3500+Kempische Steenweg+Hasselt,+303+Belgium" target="_blank" className="text-lg font-semibold">
                     Kempische Steenweg 303 3500 Hasselt, Belgium
-                  </h3>
+                  </a>
                 </div>
               </div>
 
@@ -51,13 +51,13 @@ const ContactForm: React.FC = () => {
                   </span>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-semibold">Info@LetsLink.be</h3>
+                  <a className="text-lg font-semibold" href="mailto:Info@LetsLink.be">Info@LetsLink.be</a>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Right: Contact Form */}
+          {/* Right: Contact Form 
           <div className="md:w-1/2 bg-gray-300 p-12 rounded-xl shadow-md flex flex-col justify-between">
             <h2 className="text-2xl font-bold mb-6 text-gray-800 px-4 md:px-8">
               Send us a message
@@ -99,6 +99,7 @@ const ContactForm: React.FC = () => {
               </div>
             </form>
           </div>
+          */}
         </div>
       </div>
     </div>

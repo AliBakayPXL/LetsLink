@@ -26,9 +26,9 @@ const products = [
   },
   {
     id: 2,
-    tag: "AI Networking",
-    title: "LED Lanyard",
-    desc: "Smart, stylish, and interactive. Uses AI matchmaking to connect attendees effortlessly through the color displayed on their lanyard.",
+    tag: " Immersive Light Shows ",
+    title: "Nylon LED Bracelet",
+    desc: "Light up events and connect attendees with your artist/sports team. Syncs with music, displays logos in the crowd and enhances engagement.",
     image: Lanyard,
     tagColor: "bg-blue-900",
     tagText: "text-blue-300",

@@ -12,38 +12,30 @@ const ProductLanyard = () => {
           <div className="w-full bg-gray-200 rounded-lg py-8 px-4 flex justify-center items-center">
             <img
               src={Lanyard}
-              alt="LED lanyard"
+              alt="Nylon LED Bracelet"
               className="max-w-full h-auto"
             />
           </div>
 
           <div className="w-full px-2">
             <h1 className="text-3xl font-semibold mb-4 pb-2 border-b border-gray-300">
-              LED Lanyard
+               Nylon LED Bracelet
             </h1>
 
             <p className="text-base mb-3 leading-relaxed">
-              Combining practicality with modern style, our LED Lanyards feature
-              <span className="font-bold"> customizable colors </span> to
-              distinguish groups or roles ideal for conferences or corporate
-              events, they integrate seamlessly with
-              <span className="font-bold"> badge systems</span>.
-            </p>
-
-            <p className="text-base mb-4 leading-relaxed">
-              The built-in lighting ensures visibility in dim environments,
-              enhancing both
-              <span className="font-bold"> safety</span> and
-              <span className="font-bold"> aesthetics</span>. A sleek solution
-              for organizers and attendees alike.
+            The Nylon LED Bracelet is a stylish LED bracelet with a nylon strap with 
+              <span className="font-bold"> quick release </span> 
+              buckle suitable for events and group activities. The bracelet features
+              <span className="font-bold"> powerful </span>LED lighting and can be easily operated and 
+              personalized. This bracelet is rechargeable or one-time use.
             </p>
 
             <div className="flex flex-wrap gap-3 mt-4">
               <button className="px-4 py-2 border-2 border-blue-500 text-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300">
-                Badge-ready
+                Rechargeable 
               </button>
               <button className="px-4 py-2 border-2 border-blue-500 text-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300">
-                Low-light visibility
+                Smart decks
               </button>
             </div>
           </div>
@@ -53,31 +45,23 @@ const ProductLanyard = () => {
         <div className="hidden md:flex flex-row gap-16 lg:gap-20 items-center">
           <div className="w-1/2 px-4 py-8">
             <h1 className="text-4xl font-semibold mb-4 pb-2 border-b border-gray-300">
-              LED Lanyard
+              Nylon LED Bracelet
             </h1>
 
             <p className="text-lg mb-3 leading-relaxed">
-              Combining practicality with modern style, our LED Lanyards feature
-              <span className="font-bold"> customizable colors </span> to
-              distinguish groups or roles ideal for conferences or corporate
-              events, they integrate seamlessly with
-              <span className="font-bold"> badge systems</span>.
-            </p>
-
-            <p className="text-lg mb-4 leading-relaxed">
-              The built-in lighting ensures visibility in dim environments,
-              enhancing both
-              <span className="font-bold"> safety</span> and
-              <span className="font-bold"> aesthetics</span>. A sleek solution
-              for organizers and attendees alike.
+            The Nylon LED Bracelet is a stylish LED bracelet with a nylon strap with 
+              <span className="font-bold"> quick release </span> 
+              buckle suitable for events and group activities. The bracelet features
+              <span className="font-bold"> powerful </span>LED lighting and can be easily operated and 
+              personalized. This bracelet is rechargeable or one-time use.
             </p>
 
             <div className="flex flex-wrap gap-3 mt-4">
               <button className="px-6 py-2 border-2 border-blue-500 text-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300">
-                Badge-ready
+                Rechargeable
               </button>
               <button className="px-6 py-2 border-2 border-blue-500 text-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300">
-                Low-light visibility
+                Smart decks
               </button>
             </div>
           </div>
