@@ -1,15 +1,39 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from 'emailjs-com';
 import { FiPhone, FiMapPin, FiMail } from "react-icons/fi";
 
 const ContactForm: React.FC = () => {
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    if (!formRef.current) return;
+
+    emailjs.sendForm(
+      "service_lxzw6oj",       // Replace with your EmailJS Service ID
+      "template_5kqb0qb",      // Replace with your EmailJS Template ID
+      formRef.current,
+      "pu1DLlVSFkWYjE3Ji"        // Replace with your EmailJS Public Key
+    ).then(
+      (result) => {
+        console.log("✅ Email sent:", result.text);
+        alert("Message sent successfully!");
+        formRef.current?.reset();
+      },
+      (error) => {
+        console.error("❌ Email error:", error.text);
+        alert("Failed to send message. Please try again.");
+      }
+    );
+  };
+
   return (
-    <div
-      id="contact"
-      className="scroll-mt-24 w-full bg-white py-20 px-4 md:px-8"
-    >
+    <div id="contact" className="scroll-mt-24 w-full bg-white py-20 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:space-x-12">
-          {/* Left: Text and Contact Info */}
+
+          {/* Left Column */}
           <div className="md:w-1/2 pr-0 md:pr-8 mb-12 md:mb-0 flex flex-col justify-between">
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
               Ready to light up your event?
@@ -21,35 +45,27 @@ const ContactForm: React.FC = () => {
 
             <div className="space-y-6 text-gray-900">
               <div className="flex items-start">
-                <div className="flex-shrink-0 mt-1">
-                  <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-300">
-                    <FiPhone className="text-white w-5 h-5" />
-                  </span>
-                </div>
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-300">
+                  <FiPhone className="text-white w-5 h-5" />
+                </span>
                 <div className="ml-4">
                   <a className="text-lg font-semibold" href="tel:+32468312831">+32 468 31 28 31</a>
                 </div>
               </div>
-
               <div className="flex items-start">
-                <div className="flex-shrink-0 mt-1">
-                  <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-300">
-                    <FiMapPin className="text-white w-5 h-5" />
-                  </span>
-                </div>
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-300">
+                  <FiMapPin className="text-white w-5 h-5" />
+                </span>
                 <div className="ml-4">
-                  <a href="https://www.google.com/maps?q=3500+Kempische Steenweg+Hasselt,+303+Belgium" target="_blank" className="text-lg font-semibold">
+                  <a className="text-lg font-semibold" href="https://www.google.com/maps?q=3500+Kempische Steenweg+Hasselt,+303+Belgium" target="_blank" rel="noopener noreferrer">
                     Kempische Steenweg 303 3500 Hasselt, Belgium
                   </a>
                 </div>
               </div>
-
               <div className="flex items-start">
-                <div className="flex-shrink-0 mt-1">
-                  <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-300">
-                    <FiMail className="text-white w-5 h-5" />
-                  </span>
-                </div>
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-300">
+                  <FiMail className="text-white w-5 h-5" />
+                </span>
                 <div className="ml-4">
                   <a className="text-lg font-semibold" href="mailto:Info@LetsLink.be">Info@LetsLink.be</a>
                 </div>
@@ -57,49 +73,51 @@ const ContactForm: React.FC = () => {
             </div>
           </div>
 
-          {/* Right: Contact Form 
-          <div className="md:w-1/2 bg-gray-300 p-12 rounded-xl shadow-md flex flex-col justify-between">
+          {/* Right Column - Form */}
+          <div className="md:w-1/2 bg-gray-300 p-12 rounded-xl shadow-md">
             <h2 className="text-2xl font-bold mb-6 text-gray-800 px-4 md:px-8">
               Send us a message
             </h2>
-            <form className="space-y-6 px-4 md:px-8">
+            <form ref={formRef} onSubmit={sendEmail} className="space-y-6 px-4 md:px-8">
               <div className="flex flex-col md:flex-row md:space-x-4">
                 <input
                   type="text"
+                  name="name"
                   className="w-full md:w-1/2 bg-white border border-gray-300 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   placeholder="Your name"
+                  required
                 />
                 <input
                   type="tel"
+                  name="phonenumber"
                   className="w-full md:w-1/2 mt-4 md:mt-0 bg-white border border-gray-300 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   placeholder="Phone number"
+                  required
                 />
               </div>
-              <div>
-                <input
-                  type="text"
-                  className="w-full bg-white border border-gray-300 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="Subject"
-                />
-              </div>
-              <div>
-                <textarea
-                  rows={5}
-                  className="w-full bg-white border border-gray-300 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="Write a message"
-                />
-              </div>
-              <div>
-                <button
-                  type="submit"
-                  className="w-full bg-black text-white px-4 py-2 rounded-xl hover:bg-gray-800 transition"
-                >
-                  Send Message
-                </button>
-              </div>
+              <input
+                type="text"
+                name="title"
+                className="w-full bg-white border border-gray-300 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Subject"
+                required
+              />
+              <textarea
+                name="message"
+                rows={5}
+                className="w-full bg-white border border-gray-300 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                placeholder="Write a message"
+                required
+              />
+              <button
+                type="submit"
+                className="w-full bg-black text-white px-4 py-2 rounded-xl hover:bg-gray-800 transition"
+              >
+                Send Message
+              </button>
             </form>
           </div>
-          */}
+
         </div>
       </div>
     </div>

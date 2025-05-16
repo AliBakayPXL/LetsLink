@@ -20,7 +20,7 @@ const Hero = () => {
       />
 
       {/* Semi-transparent overlay */}
-      <div className="absolute inset-0 bg-[#0D1821] opacity-50 z-10"></div>
+      <div className="absolute inset-0 bg-[#0D1821] opacity-5 z-10"></div>
 
       {/* Gradient fade effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0D1821]/30 to-[#0D1821] z-10"></div>
