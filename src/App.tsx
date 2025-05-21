@@ -4,6 +4,12 @@ import Products from "./pages/Products";
 import Contact from "./pages/Contact";
 import Experiences from "./pages/Experiences";
 import Footer from "./components/Footer";
+import Privacy from "./pages/Privacy";
+import Cookies from "./pages/Cookies";
+import { pdfjs } from 'react-pdf';
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
 
 function App() {
   return (
@@ -17,6 +23,8 @@ function App() {
             <Route path="/experiences" element={<Experiences />} />
             <Route path="/products" element={<Products />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/cookies" element={<Cookies />} />
           </Routes>
         </main>
         <Footer />
