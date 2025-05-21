@@ -16,7 +16,8 @@ const ProductSmartTag: React.FC = () => {
 
           <div className="w-full px-2">
             <h1 className="text-3xl font-semibold mb-4 pb-2 border-b border-gray-300">
-              First European Patented Recharchable Bracelets
+              Europe’s first patended, <br /> ECO-Friendly and smart
+              LED-Wearables
             </h1>
             <p className="text-lg mb-3 leading-relaxed">
               From our rechargeable LED bracelets to our eco-friendly campus,
@@ -35,7 +36,9 @@ const ProductSmartTag: React.FC = () => {
         <div className="hidden md:flex flex-row gap-16 lg:gap-20 items-center">
           <div className="w-1/2 px-4 py-8">
             <h1 className="text-4xl font-semibold mb-4 pb-2 border-b border-gray-300">
-              First European Patented Recharchable Bracelets
+              Europe’s first patended,
+              <br /> ECO-Friendly and <br />
+              smart LED-Wearables
             </h1>
             {/*   Embedded with
               <span className="font-bold"> NFC/RFID technology </span> , these

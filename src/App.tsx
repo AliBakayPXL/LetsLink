@@ -6,9 +6,7 @@ import Experiences from "./pages/Experiences";
 import Footer from "./components/Footer";
 import Privacy from "./pages/Privacy";
 import Cookies from "./pages/Cookies";
-import { pdfjs } from "react-pdf";
-
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+import SustainabilityPage from "./pages/SustainabilityPage";
 
 function App() {
   return (

@@ -2,7 +2,7 @@ import SusHero from "../components/SusHero.tsx";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import SusContent from "../components/SusContent.tsx";
-import ExperienceNavbar from "../components/ExperienceNavbar.tsx";
+import Navbar from "../components/Navbar.tsx";
 
 const SustainabilityPage = () => {
   const location = useLocation();
@@ -22,7 +22,7 @@ const SustainabilityPage = () => {
 
   return (
     <main className="">
-      <ExperienceNavbar />
+      <Navbar />
       <SusHero />
       <SusContent />
     </main>
