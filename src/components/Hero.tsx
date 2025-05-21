@@ -36,7 +36,7 @@ const Hero = () => {
               animate="show"
               className="mb-6 text-[3rem] font-bold leading-tight sm:text-[4.5rem]"
             >
-              Its Not Just A Product, Its An Experience
+              LED bracelet's for your event
             </motion.h1>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -44,7 +44,7 @@ const Hero = () => {
               animate="show"
               className="sm:mb-14 mb-10 text-2xl font-light sm:text-[2rem]"
             >
-              Sync and light up the crowd with our customizable LED products
+              Light up your event with our customizable LED products
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.5)}
@@ -55,7 +55,7 @@ const Hero = () => {
                 to="/contact#contact"
                 className="sm:px-9 px-8 py-3.5 sm:text-xl text-lg rounded-full bg-[#3CACD2] text-primary transition-all duration-200 hover:bg-[#4BC8D0] hover:outline hover:outline-[#3CACD2]/40 hover:outline-offset-[-1px]"
               >
-                Get a Free Quote
+                Book a Call
               </Link>
             </motion.div>
           </div>

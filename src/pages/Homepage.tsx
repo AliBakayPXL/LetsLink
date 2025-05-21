@@ -6,11 +6,10 @@ import Solutions from "../components/Solutions";
 import CTABlock from "../components/CTABlock";
 import ProductsPreview from "../components/ProductsPreview";
 import Navbar from "../components/Navbar";
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Homepage = () => {
-
   const location = useLocation();
 
   useEffect(() => {
@@ -28,7 +27,7 @@ const Homepage = () => {
 
   return (
     <main>
-      <Navbar></Navbar>
+      <Navbar />
       <Hero />
       <ExperiencesPreview />
       <HowItWorks />

@@ -45,7 +45,7 @@ const solutions: SolutionItem[] = [
 ];
 
 const Solutions = () => (
-  <section className="min-h-screen flex flex-col items-center px-4 py-8 pt-30 sm:pt-34 sm:py-12">
+  <section className="min-h-screen flex flex-col items-center px-4 py-8 pt-30 sm:pt-34 sm:py-12 bg-white">
     <div className="max-w-4xl mx-auto text-center mb-12">
       <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
         Our solutions

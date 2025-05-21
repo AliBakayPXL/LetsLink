@@ -9,7 +9,7 @@ const ProductLanyard = () => {
       <div className="max-w-6xl w-full">
         {/* Mobile layout - Image on top */}
         <div className="flex flex-col md:hidden gap-6">
-          <div className="w-full bg-gray-200 rounded-lg py-8 px-4 flex justify-center items-center">
+          <div className="w-full bg-[#131c23] rounded-lg py-8 px-4 flex justify-center items-center">
             <img
               src={Lanyard}
               alt="Nylon LED Bracelet"
@@ -19,20 +19,23 @@ const ProductLanyard = () => {
 
           <div className="w-full px-2">
             <h1 className="text-3xl font-semibold mb-4 pb-2 border-b border-gray-300">
-               Nylon LED Bracelet
+              Nylon LED Bracelet
             </h1>
 
             <p className="text-base mb-3 leading-relaxed">
-            The Nylon LED Bracelet is a stylish LED bracelet with a nylon strap with 
-              <span className="font-bold"> quick release </span> 
-              buckle suitable for events and group activities. The bracelet features
-              <span className="font-bold"> powerful </span>LED lighting and can be easily operated and 
-              personalized. This bracelet is rechargeable or one-time use.
+              The Nylon LED Bracelet is a stylish LED bracelet with a nylon
+              strap with
+              <span className="font-bold"> quick release </span>
+              buckle suitable for events and group activities. The bracelet
+              features
+              <span className="font-bold"> powerful </span>LED lighting and can
+              be easily operated and personalized. This bracelet is rechargeable
+              or one-time use.
             </p>
 
             <div className="flex flex-wrap gap-3 mt-4">
               <button className="px-4 py-2 border-2 border-blue-500 text-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300">
-                Rechargeable 
+                Rechargeable
               </button>
               <button className="px-4 py-2 border-2 border-blue-500 text-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300">
                 Smart decks
@@ -49,11 +52,14 @@ const ProductLanyard = () => {
             </h1>
 
             <p className="text-lg mb-3 leading-relaxed">
-            The Nylon LED Bracelet is a stylish LED bracelet with a nylon strap with 
-              <span className="font-bold"> quick release </span> 
-              buckle suitable for events and group activities. The bracelet features
-              <span className="font-bold"> powerful </span>LED lighting and can be easily operated and 
-              personalized. This bracelet is rechargeable or one-time use.
+              The Nylon LED Bracelet is a stylish LED bracelet with a nylon
+              strap with
+              <span className="font-bold"> quick release </span>
+              buckle suitable for events and group activities. The bracelet
+              features
+              <span className="font-bold"> powerful </span>LED lighting and can
+              be easily operated and personalized. This bracelet is rechargeable
+              or one-time use.
             </p>
 
             <div className="flex flex-wrap gap-3 mt-4">
@@ -66,7 +72,7 @@ const ProductLanyard = () => {
             </div>
           </div>
 
-          <div className="w-1/2 bg-gray-200 rounded-lg py-8 px-4 flex justify-center items-center">
+          <div className="w-1/2 bg-[#131c23] rounded-lg py-8 px-4 flex justify-center items-center">
             <img
               src={Lanyard}
               alt="LED bracelet pro product"

@@ -39,7 +39,7 @@ const ExperiencesPreview = () => {
   ];
 
   return (
-    <div className="relative min-h-screen flex flex-col justify-start sm:justify-center items-center py-8 sm:py-16 overflow-x-hidden">
+    <div className="relative min-h-screen flex flex-col justify-start sm:justify-center items-center py-8 sm:py-16 overflow-x-hidden bg-white">
       {/* Decorative background square - only visible on desktop */}
       {/*<div className="hidden xl:block absolute right-[18rem] bottom-10 w-[72rem] h-[22rem] bg-[#d9e8f4] -z-10" />*/}
 

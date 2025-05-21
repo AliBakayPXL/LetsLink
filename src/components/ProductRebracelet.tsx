@@ -10,7 +10,7 @@ const ProductSmartTag: React.FC = () => {
       <div className="max-w-6xl w-full">
         {/* Mobile layout - Image on top */}
         <div className="flex flex-col md:hidden gap-6">
-          <div className="w-full bg-gray-200 rounded-lg py-8 px-4 flex justify-center items-center">
+          <div className="w-full bg-[#131c23] rounded-lg py-8 px-4 flex justify-center items-center">
             <img
               src={ReBracelet}
               alt="White LED bracelet wristband"
@@ -52,7 +52,7 @@ const ProductSmartTag: React.FC = () => {
 
         {/* Desktop layout - Image on left */}
         <div className="hidden md:flex flex-row gap-16 lg:gap-20 items-center">
-          <div className="w-1/2 bg-gray-200 rounded-lg py-8 px-4 flex justify-center items-center">
+          <div className="w-1/2 bg-[#131c23] rounded-lg py-8 px-4 flex justify-center items-center">
             <img
               src={ReBracelet}
               alt="White LED bracelet wristband"

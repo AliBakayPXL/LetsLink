@@ -21,15 +21,16 @@ const menuItems: MenuItem[] = [
       { label: "Overview", href: "/products#hero" },
       { label: "Led Bracelet", href: "/products#led-bracelet" },
       { label: "Led Nylon Bracelet", href: "/products#led-nylon" },
-      { label: "Led Ball", href: "/products#led-ball" },
       {
         label: "Rechargeable bracelet",
         href: "/products#led-rebracelet",
       },
       { label: "Smart Tags", href: "/products#smart-tag" },
+      { label: "Led Ball", href: "/products#led-ball" },
     ],
   },
   { label: "Experiences", href: "/experiences#hero" },
+  { label: "Sustainability", href: "/sustainability#hero" },
   { label: "Contact", href: "/contact#contact" },
 ];
 
@@ -199,7 +200,7 @@ const Navbar = () => {
             to="/Contact#contact"
             className="hidden lg:block bg-white/10 outline-1 outline-white/40 outline-offset-[-1px] px-7 py-2.5 rounded-full transition-all duration-200 hover:bg-[#3CACD2] hover:outline-none hover:text-primary whitespace-nowrap"
           >
-            Book a Call
+            Get a Free Quote
           </Link>
 
           {/* Mobile Menu Button */}
