@@ -40,7 +40,7 @@ const SusHero: React.FC = () => {
             At LetsLink, every light tells a story and every story starts with
             care for the planet. <br /> <br></br>
             Our LED wearables are made to shine again and again. <br />
-            After each event, we collect and recharge them, ready for the next
+            After each event, we collect, clean and recharge them, ready for the next
             moment of magic. <br />
             No waste, just memories. We design everything with the future in
             mind.
