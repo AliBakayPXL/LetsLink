@@ -130,23 +130,31 @@ const Footer = () => (
           </li>
         </ul>
       </div>
-      {/* Subscribe */}
+      {/* Social */}
       <div>
-        <h4 className="font-semibold mb-10 text-lg">Subscribe</h4>
-        <p className="mb-3 text-sm">Sign up to get updates & news.</p>
-        <form className="flex flex-col gap-2">
-          <input
-            type="email"
-            placeholder="Email Address"
-            className="bg-gray-700 rounded px-3 py-2 mb-2 text-white placeholder-gray-400"
-          />
-          <button
-            type="submit"
-            className="bg-[#3CACD2] text-white rounded px-3 py-2 font-semibold hover:opacity-90 transition-all cursor-pointer"
-          >
-            Subscribe Now &rarr;
-          </button>
-        </form>
+        <h4 className="font-semibold mb-10 text-lg">Socials</h4>
+        <ul className="space-y-4">
+          <li>
+            <a href="https://www.linkedin.com/company/letslinkbe/posts/?feedView=all" className="hover:text-[#3CACD2]">
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/letslink_be/" className="hover:text-[#3CACD2]">
+              Instagram
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@LetsLinkBE" className="hover:text-[#3CACD2]">
+              Youtube
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@letslink_be?_t=ZG-8wZ2kq6RVjt&_r=1" className="hover:text-[#3CACD2]">
+              TikTok
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
     <div className="max-w-7xl mx-auto border-t border-gray-600 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
