@@ -2,6 +2,7 @@ import ExperienceHero from "../components/ExperienceHero";
 import ExperienceNetworkEvents from "../components/ExperienceNetworkEvents.tsx";
 import ExperienceNetworkCorp from "../components/ExperienceNetworkCorp.tsx";
 import ExperienceNavbar from "../components/ExperienceNavbar.tsx";
+import ExperienceConcerts from "../components/ExperienceConcerts.tsx";
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -26,8 +27,9 @@ const Experiences = () => {
   <main className="pt-24">
     <ExperienceNavbar/>
     <ExperienceHero/>
-    <ExperienceNetworkEvents/>
+    <ExperienceConcerts></ExperienceConcerts>
     <ExperienceNetworkCorp/>
+    <ExperienceNetworkEvents/>
   </main>
   )
 };
