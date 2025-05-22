@@ -4,7 +4,7 @@ import Circle from "../assets/CirkelLeandro.webp";
 const ProductSmartTag: React.FC = () => {
   return (
     <div
-      id="smart-tag"
+      id="Content"
       className="scroll-mt-16 min-h-screen bg-white flex justify-center items-center py-12 md:py-16 px-4"
     >
       <div className="max-w-6xl w-full">
@@ -16,8 +16,8 @@ const ProductSmartTag: React.FC = () => {
 
           <div className="w-full px-2">
             <h1 className="text-3xl font-semibold mb-4 pb-2 border-b border-gray-300">
-              Europe’s first patended, <br /> ECO-Friendly and smart
-              LED-Wearables
+              Europe’s first patended, <br />
+              rechargeable LED-Bracelets
             </h1>
             <p className="text-lg mb-3 leading-relaxed">
               From our rechargeable LED bracelets to our eco-friendly campus,
@@ -37,8 +37,7 @@ const ProductSmartTag: React.FC = () => {
           <div className="w-1/2 px-4 py-8">
             <h1 className="text-4xl font-semibold mb-4 pb-2 border-b border-gray-300">
               Europe’s first patended,
-              <br /> ECO-Friendly and <br />
-              smart LED-Wearables
+              <br />  rechargeable LED-Bracelets
             </h1>
             {/*   Embedded with
               <span className="font-bold"> NFC/RFID technology </span> , these

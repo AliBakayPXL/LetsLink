@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import tableWithWineGlasses from "../assets/photos/experienceconcertleft.webp";
-import yellowBracelets from "../assets/photos/experienceconcertright.webp";
+import secondvideo from "../assets/videos/background_video_four.mp4";
 import video from "../assets/videos/background_video_three.mp4";
 
 const ExperienceConcerts: React.FC = () => {
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
 
-  const images = [tableWithWineGlasses, yellowBracelets];
+  const images = [tableWithWineGlasses];
 
   const openGallery = (index: number) => {
     setActiveImageIndex(index);
@@ -154,13 +154,15 @@ const ExperienceConcerts: React.FC = () => {
                 </div>
                 <div
                   className="cursor-pointer relative"
-                  onClick={() => openGallery(1)}
                 >
-                  <img
-                    src={yellowBracelets}
-                    alt="LED wearables at event"
-                    className="w-full h-64 object-cover rounded-lg"
-                  />
+                    <video
+                  src={secondvideo}
+                  className="w-full h-64 object-cover rounded-lg"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
                 </div>
               </div>
               <div className="relative">

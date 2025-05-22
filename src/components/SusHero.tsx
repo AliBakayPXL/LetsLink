@@ -13,12 +13,12 @@ const SusHero: React.FC = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen pt-23 lg:pt-24 flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen pt-23 lg:pt-24 flex flex-col overflow-hidden"
     >
       {/* Blurred Video Background */}
       <video
         ref={videoRef}
-        className="absolute inset-0 w-full h-full object-cover filter blur-md brightness-40 z-0"
+        className="absolute inset-0 w-full h-full object-cover filter blur-md brightness-30 z-0"
         src={LetsLinkVideo}
         autoPlay
         loop
@@ -29,17 +29,26 @@ const SusHero: React.FC = () => {
       {/* Semi-transparent overlay */}
       <div className="absolute inset-0 bg-black/30 z-10"></div>
 
-      {/* Content */}
-      <div className="relative z-20 w-full max-w-7xl px-6 md:px-8 flex flex-col md:flex-row items-center justify-between text-white space-y-8 md:space-y-0">
+      {/* Top Title Section */}
+      <div className="relative z-20 w-full flex justify-center pt-8 pb-4">
+        <div className="text-center text-white px-6">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold drop-shadow-2xl mb-2">
+            Europe's first patented rechargeable LED-BRACELET
+          </h1>
+        </div>
+      </div>
+
+      {/* Main Content Section */}
+      <div className="relative z-20 flex-1 w-full max-w-7xl mx-auto px-6 md:px-8 flex flex-col md:flex-row items-center justify-between text-white space-y-8 md:space-y-0">
         {/* Text section */}
         <div className="md:w-2/3 w-full text-left space-y-6">
-          <h1 className="text-4xl md:text-5xl font-bold drop-shadow-lg">
+          <h2 className="text-4xl md:text-5xl font-bold drop-shadow-lg">
             Sustainably Connected
-          </h1>
+          </h2>
           <p className="text-lg drop-shadow-md">
             At LetsLink, every light tells a story and every story starts with
             care for the planet. <br /> <br></br>
-            Our LED wearables are made to shine again and again. <br />
+            Our LED bracelets are made to shine again and again. <br />
             After each event, we collect, clean and recharge them, ready for the next
             moment of magic. <br />
             No waste, just memories. We design everything with the future in

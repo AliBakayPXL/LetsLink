@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import HeroVideo from "../assets/videos/background_video_four.mp4";
+import Replacement from "../assets/photos/replacement.webp"
 
 const Hero = () => {
   return (
@@ -9,7 +9,7 @@ const Hero = () => {
       id="home"
       className="relative h-[86vh] sm:h-screen overflow-hidden text-secondary"
     >
-      {/* Background Video */}
+      {/* Background Video 
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
         src={HeroVideo}
@@ -18,9 +18,16 @@ const Hero = () => {
         muted
         playsInline
       />
+      */}
+
+      <img
+      className="absolute top-0 left-0 w-full h-full object-cover z-0"
+      src={Replacement}
+      >
+      </img>
 
       {/* Semi-transparent overlay */}
-      <div className="absolute inset-0 bg-[#0D1821] opacity-5 z-10"></div>
+      <div className="absolute inset-0 bg-[#0D1821] opacity-70 z-10"></div>
 
       {/* Gradient fade effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0D1821]/30 to-[#0D1821] z-10"></div>
