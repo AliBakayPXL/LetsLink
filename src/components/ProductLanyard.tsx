@@ -1,4 +1,4 @@
-import Lanyard from "../assets/photos/productrebracelet.webp";
+import Lanyard from "../assets/photos/product_nylon.webp";
 
 const ProductLanyard = () => {
   return (
