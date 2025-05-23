@@ -43,11 +43,10 @@ const SusHero: React.FC = () => {
         {/* Text section */}
         <div className="md:w-2/3 w-full text-left space-y-6">
           <h2 className="text-4xl md:text-5xl font-bold drop-shadow-lg">
-            Europe's First Rechargeable LED-Bracelet
+            At LetsLink, Every Light Tells a Story and Every Story Starts with
+            Care for The Planet.
           </h2>
           <p className="text-lg drop-shadow-md">
-            At LetsLink, every light tells a story and every story starts with
-            care for the planet. <br /> <br></br>
             Our LED bracelets are made to shine again and again. <br />
             After each event, we collect, clean and recharge them, ready for the
             next moment of magic. <br />

@@ -37,7 +37,11 @@ const ExperienceConcerts: React.FC = () => {
               Concerts & festivals
             </h1>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Elevate the crowd experience at your concert or festival with LetsLink. Our LED wearables unify your audience, amplify each performance, and keep attendees engaged from start to finish. From massive light shows to intimate gigs, our wearables make every moment unforgettable.
+              Elevate the crowd experience at your concert or festival with
+              LetsLink. Our LED wearables unify your audience, amplify each
+              performance, and keep attendees engaged from start to finish. From
+              massive light shows to intimate gigs, our wearables make every
+              moment unforgettable.
             </p>
 
             {/* Features list */}
@@ -64,34 +68,9 @@ const ExperienceConcerts: React.FC = () => {
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold">Vibrant Atmosphere</h3>
                   <p className="text-gray-700">
-                  Color-coded LEDs clearly segment different sections of the audience, boosting excitement and creating a dazzling visual experience.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start">
-                <div className="flex-shrink-0 mt-1">
-                  <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-200 text-blue-600">
-                    <svg
-                      className="w-5 h-5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                  </span>
-                </div>
-                <div className="ml-4">
-                  <h3 className="text-lg font-semibold">Synchronized Effects</h3>
-                  <p className="text-gray-700">
-                  Instant light pulses synchronized to the beat or mood of the music animate the crowd, igniting energy and participation.
+                    Color-coded LEDs clearly segment different sections of the
+                    audience, boosting excitement and creating a dazzling visual
+                    experience.
                   </p>
                 </div>
               </div>
@@ -117,10 +96,42 @@ const ExperienceConcerts: React.FC = () => {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold">
-                  Memorable Connections
+                    Synchronized Effects
                   </h3>
                   <p className="text-gray-700">
-                  Wearables forge a shared experience that brings your audience closer together, transforming each event into a lasting memory.
+                    Instant light pulses synchronized to the beat or mood of the
+                    music animate the crowd, igniting energy and participation.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start">
+                <div className="flex-shrink-0 mt-1">
+                  <span className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-200 text-blue-600">
+                    <svg
+                      className="w-5 h-5"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <div className="ml-4">
+                  <h3 className="text-lg font-semibold">
+                    Memorable Connections
+                  </h3>
+                  <p className="text-gray-700">
+                    Wearables forge a shared experience that brings your
+                    audience closer together, transforming each event into a
+                    lasting memory.
                   </p>
                 </div>
               </div>
@@ -152,17 +163,15 @@ const ExperienceConcerts: React.FC = () => {
                     className="w-full h-64 object-cover rounded-lg"
                   />
                 </div>
-                <div
-                  className="cursor-pointer relative"
-                >
-                    <video
-                  src={secondvideo}
-                  className="w-full h-64 object-cover rounded-lg"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                />
+                <div className="cursor-pointer relative">
+                  <video
+                    src={secondvideo}
+                    className="w-full h-64 object-cover rounded-lg"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  />
                 </div>
               </div>
               <div className="relative">

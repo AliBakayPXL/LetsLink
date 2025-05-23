@@ -3,8 +3,8 @@ import ExperienceNetworkEvents from "../components/ExperienceNetworkEvents.tsx";
 import ExperienceNetworkCorp from "../components/ExperienceNetworkCorp.tsx";
 import ExperienceNavbar from "../components/ExperienceNavbar.tsx";
 import ExperienceConcerts from "../components/ExperienceConcerts.tsx";
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Experiences = () => {
   const location = useLocation();
@@ -22,16 +22,15 @@ const Experiences = () => {
     }
   }, [location]);
 
-
   return (
-  <main className="pt-24">
-    <ExperienceNavbar/>
-    <ExperienceHero/>
-    <ExperienceConcerts></ExperienceConcerts>
-    <ExperienceNetworkCorp/>
-    <ExperienceNetworkEvents/>
-  </main>
-  )
+    <main className="pt-24">
+      <ExperienceNavbar />
+      <ExperienceHero />
+      <ExperienceConcerts />
+      <ExperienceNetworkCorp />
+      <ExperienceNetworkEvents />
+    </main>
+  );
 };
 
 export default Experiences;
