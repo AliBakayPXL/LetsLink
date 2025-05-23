@@ -200,7 +200,7 @@ const Navbar = () => {
             to="/Contact#contact"
             className="hidden lg:block bg-white/10 outline-1 outline-white/40 outline-offset-[-1px] px-7 py-2.5 rounded-full transition-all duration-200 hover:bg-[#3CACD2] hover:outline-none hover:text-primary whitespace-nowrap"
           >
-            Get a Free Quote
+            Get a free quote
           </Link>
 
           {/* Mobile Menu Button */}

@@ -27,7 +27,7 @@ const HowItWorks = () => (
         </div>
         {/* Tekst content */}
         <div className="flex-1 flex flex-col justify-center gap-8">
-          <h2 className="title">Connect people at events</h2>
+          <h2 className="title">Connect People at Events</h2>
           <p className="description">
             LetsLink makes connecting effortless, intuitive, and impactful. Our
             smart technology links your guests with the right people at the

@@ -28,7 +28,7 @@ const ExperiencesPreview = () => {
       imageUrl: HomeSporting,
       title: "Sporting Events",
       description:
-        "LetsLink energizes sports events with interactive LED wearables that sync to the action, boosting fan excitement and real-time crowd connection.",
+        "LetsLink energizes sporting events with interactive LED wearables that sync to the action, boosting fan excitement and real-time crowd connection.",
     },
     {
       imageUrl: "images/letslink_3.webp",
@@ -46,7 +46,7 @@ const ExperiencesPreview = () => {
       <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-6 sm:gap-0">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center w-full sm:whitespace-nowrap">
-            Event solutions for every occasion
+            Event Solutions for Every Occasion
           </h1>
         </div>
 

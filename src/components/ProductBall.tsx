@@ -20,27 +20,25 @@ const ProductSmartTag: React.FC = () => {
             </h1>
 
             <p className="text-base mb-3 leading-relaxed">
-              Designed for sustainability, these bracelets offer the same
-              vibrant LED features but with
-              <span className="font-bold"> reusable </span> longevity. Perfect
-              for
-              <span className="font-bold"> multi-day </span> events or
-              <span className="font-bold"> eco-conscious </span> brands.
-            </p>
-
-            <p className="text-base mb-4 leading-relaxed">
-              The rechargeable battery ensures reliable performance,
-              <span className="font-bold"> eliminating waste </span> while
-              keeping your event's energy vibrant. A smart choice for
-              forward-thinking organizers
+              Take audience engagement to the next level with our LED Balls.
+              Designed to create show-stopping visual moments, these large,
+              light-filled spheres transform crowds into an{" "}
+              <span className="font-bold">interactive</span> part of the
+              performance. Whether rolling through a festival or floating across
+              an arena, the LED Balls{" "}
+              <span className="font-bold">sync seamlessly</span> with music and
+              light shows for unforgettable impact. Available in multiple sizes
+              and fully <span className="font-bold">DMX-controlled</span>, they
+              are the perfect centerpiece for concerts, festivals, and immersive
+              brand experiences.
             </p>
 
             <div className="flex flex-wrap gap-3 mt-4">
               <button className="px-4 py-2 border-2 border-blue-500 text-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300">
-                Colourfull
+                Super Lightweight
               </button>
               <button className="px-4 py-2 border-2 border-blue-500 text-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300">
-                Bouncy
+                Interactive
               </button>
             </div>
           </div>
@@ -54,31 +52,28 @@ const ProductSmartTag: React.FC = () => {
 
           <div className="w-1/2 px-4 py-8">
             <h1 className="text-4xl font-semibold mb-4 pb-2 border-b border-gray-300">
-              LED-Ball
+              LED Ball
             </h1>
 
             <p className="text-lg mb-3 leading-relaxed">
-              Designed for sustainability, these bracelets offer the same
-              vibrant LED features but with
-              <span className="font-bold"> reusable </span> longevity. Perfect
-              for
-              <span className="font-bold"> multi-day </span> events or
-              <span className="font-bold"> eco-conscious </span> brands.
+              Take audience engagement to the next level with our LED Balls.
+              Designed to create show-stopping visual moments, these large,
+              light-filled spheres transform crowds into an{" "}
+              <span className="font-bold">interactive</span> part of the
+              performance. Whether rolling through a festival or floating across
+              an arena, the LED Balls{" "}
+              <span className="font-bold">sync seamlessly</span> with music and
+              light shows for unforgettable impact. Available in multiple sizes
+              and fully <span className="font-bold">DMX-controlled</span>, they
+              are the perfect centerpiece for concerts, festivals, and immersive
+              brand experiences.
             </p>
-
-            <p className="text-lg mb-4 leading-relaxed">
-              The rechargeable battery ensures reliable performance,
-              <span className="font-bold"> eliminating waste </span> while
-              keeping your event's energy vibrant. A smart choice for
-              forward-thinking organizers
-            </p>
-
             <div className="flex flex-wrap gap-3 mt-4">
               <button className="px-6 py-2 border-2 border-blue-500 text-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300">
-                Colourfull
+                Super Lightweight
               </button>
               <button className="px-6 py-2 border-2 border-blue-500 text-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300">
-                Bouncy
+                Interactive
               </button>
             </div>
           </div>

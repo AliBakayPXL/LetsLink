@@ -18,7 +18,7 @@ const ContentShowcase = () => (
             We provide LED products designed to enhance engagement, manage
             crowds, and simplify payments. Each product is customizable,
             rechargeable, and built to transform your event into a seamless,
-            connected experience
+            connected experience.
           </p>
         </div>
       </div>
@@ -26,9 +26,7 @@ const ContentShowcase = () => (
       {/* Right: heading, icon-text rows, photo bottom */}
       <div className="flex flex-col gap-8">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-2 leading-tight">
-          Revolutionizing event
-          <br className="hidden md:block" />
-          connections
+          Revolutionizing Event Connections
         </h2>
         <div className="flex items-start gap-4">
           <div>

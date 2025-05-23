@@ -21,31 +21,24 @@ const ProductBracelet = () => {
             <h1 className="text-3xl font-semibold mb-4 pb-2 border-b border-gray-300">
               LED Bracelet
             </h1>
-            S
             <p className="text-base mb-3 leading-relaxed">
-              Our LED bracelets connect participants in an intuitive and
-              visually striking way.
-              <span className="font-bold"> Programmable</span> to display
-              <span className="font-bold"> different colors</span>, they help
-              people with shared interests or groups identify each other
-              effortlessly.
-            </p>
-            <p className="text-base mb-4 leading-relaxed">
-              Perfect for networking
-              <span className="font-bold"> events</span>,
-              <span className="font-bold"> concerts</span>, or
-              <span className="font-bold"> festivals</span>, these bracelets
-              turn wearers into active contributors to the event's atmosphere.
-              Their
-              <span className="font-bold"> comfortable design</span> ensures an
-              engaging, dynamic experience for all.
+              Our LED bracelets transform guests into part of the show. Syncing
+              with music and moments, they create striking visual effects that
+              energize any crowd.
+              <span className="font-bold"> Programmable</span> by
+              <span className="font-bold"> color</span> and fully
+              <span className="font-bold"> DMX-controlled</span>, they make
+              group identification and interactive networking effortless.
+              Perfect for concerts, sports events, festivals, and corporate
+              gatherings, these bracelets combine comfort with unforgettable
+              impact.
             </p>
             <div className="flex flex-wrap gap-3 mt-4">
               <button className="px-4 py-2 border-2 border-blue-500 text-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300">
-                Color-coded
+                AI Connections
               </button>
               <button className="px-4 py-2 border-2 border-blue-500 text-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300">
-                Interactive networking
+                Light Shows
               </button>
             </div>
           </div>
@@ -67,31 +60,24 @@ const ProductBracelet = () => {
             </h1>
 
             <p className="text-lg mb-3 leading-relaxed">
-              Our LED bracelets connect participants in an intuitive and
-              visually striking way.
-              <span className="font-bold"> Programmable</span> to display
-              <span className="font-bold"> different colors</span>, they help
-              people with shared interests or groups identify each other
-              effortlessly.
-            </p>
-
-            <p className="text-lg mb-4 leading-relaxed">
-              Perfect for networking
-              <span className="font-bold"> events</span>,
-              <span className="font-bold"> concerts</span>, or
-              <span className="font-bold"> festivals</span>, these bracelets
-              turn wearers into active contributors to the event's atmosphere.
-              Their
-              <span className="font-bold"> comfortable design</span> ensures an
-              engaging, dynamic experience for all.
+              Our LED bracelets transform guests into part of the show. Syncing
+              with music and moments, they create striking visual effects that
+              energize any crowd.
+              <span className="font-bold"> Programmable</span> by
+              <span className="font-bold"> color</span> and fully
+              <span className="font-bold"> DMX-controlled</span>, they make
+              group identification and interactive networking effortless.
+              Perfect for concerts, sports events, festivals, and corporate
+              gatherings, these bracelets combine comfort with unforgettable
+              impact.
             </p>
 
             <div className="flex flex-wrap gap-3 mt-4">
               <button className="px-6 py-2 border-2 border-blue-500 text-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300">
-                Color-coded
+                AI Connections
               </button>
               <button className="px-6 py-2 border-2 border-blue-500 text-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300">
-                Interactive networking
+                Light Shows
               </button>
             </div>
           </div>

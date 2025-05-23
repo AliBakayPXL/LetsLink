@@ -23,9 +23,9 @@ const ProductLanyard = () => {
             </h1>
 
             <p className="text-base mb-3 leading-relaxed">
-              The Nylon LED Bracelet is a stylish LED bracelet with a nylon
-              strap with
-              <span className="font-bold"> quick release </span>
+              The Nylon LED Bracelet is a stylish accessory featuring a durable
+              nylon strap with
+              <span className="font-bold"> quick-release </span>
               buckle suitable for events and group activities. The bracelet
               features
               <span className="font-bold"> powerful </span>LED lighting and can
@@ -52,16 +52,15 @@ const ProductLanyard = () => {
             </h1>
 
             <p className="text-lg mb-3 leading-relaxed">
-              The Nylon LED Bracelet is a stylish LED bracelet with a nylon
-              strap with
-              <span className="font-bold"> quick release </span>
+              The Nylon LED Bracelet is a stylish accessory featuring a durable
+              nylon strap with
+              <span className="font-bold"> quick-release </span>
               buckle suitable for events and group activities. The bracelet
               features
               <span className="font-bold"> powerful </span>LED lighting and can
               be easily operated and personalized. This bracelet is rechargeable
               or one-time use.
             </p>
-
             <div className="flex flex-wrap gap-3 mt-4">
               <button className="px-6 py-2 border-2 border-blue-500 text-blue-500 rounded-full hover:bg-blue-500 hover:text-white transition-colors duration-300">
                 Rechargeable

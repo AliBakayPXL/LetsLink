@@ -15,7 +15,7 @@ const solutions: SolutionItem[] = [
   {
     icon: Handshake,
     title: "Smart Networking",
-    desc: "Wearables that match and connect your guests automatically. Turn every event into a seamless networking experience",
+    desc: "Wearables that match and connect your guests automatically. Turn every event into a seamless networking experience.",
   },
   {
     icon: Lightbulb,
@@ -30,7 +30,7 @@ const solutions: SolutionItem[] = [
   {
     icon: Contactless,
     title: "Cashless Payments",
-    desc: "Fast, secure transactions with smart NFC. Make purchases simple and hassle-free for every guest",
+    desc: "Fast, secure transactions with smart NFC. Make purchases simple and hassle-free for every guest.",
   },
   {
     icon: Tag,

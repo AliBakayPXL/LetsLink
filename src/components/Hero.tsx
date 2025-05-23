@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import Replacement from "../assets/photos/replacement.webp"
+import Replacement from "../assets/photos/replacement.webp";
 
 const Hero = () => {
   return (
@@ -21,10 +21,9 @@ const Hero = () => {
       */}
 
       <img
-      className="absolute top-0 left-0 w-full h-full object-cover z-0"
-      src={Replacement}
-      >
-      </img>
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+        src={Replacement}
+      ></img>
 
       {/* Semi-transparent overlay */}
       <div className="absolute inset-0 bg-[#0D1821] opacity-70 z-10"></div>
@@ -43,7 +42,7 @@ const Hero = () => {
               animate="show"
               className="mb-6 text-[3rem] font-bold leading-tight sm:text-[4.5rem]"
             >
-              LED bracelet's for your event
+              LED Bracelets for Your Event
             </motion.h1>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -62,7 +61,7 @@ const Hero = () => {
                 to="/contact#contact"
                 className="sm:px-9 px-8 py-3.5 sm:text-xl text-lg rounded-full bg-[#3CACD2] text-primary transition-all duration-200 hover:bg-[#4BC8D0] hover:outline hover:outline-[#3CACD2]/40 hover:outline-offset-[-1px]"
               >
-                Book a Call
+                Book a call
               </Link>
             </motion.div>
           </div>

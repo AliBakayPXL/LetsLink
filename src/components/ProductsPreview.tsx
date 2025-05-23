@@ -18,7 +18,7 @@ const products = [
     id: 1,
     tag: "Crowd Synchronization",
     title: "LED Bracelet",
-    desc: "Light up events and connect attendees with your artist/ sports team. Syncs with music, displays logos in the crowd and enhances engagement.",
+    desc: "Connect guests with vibrant, color-coded bracelets that sync with music and group identity. Perfect for networking, concerts, and festivals. Comfortable, intuitive, and built for engagement.",
     image: Bracelet,
     tagColor: "bg-blue-900",
     tagText: "text-blue-300",
@@ -28,17 +28,17 @@ const products = [
     id: 2,
     tag: " Immersive Light Shows ",
     title: "Nylon LED Bracelet",
-    desc: "Light up events and connect attendees with your artist/sports team. Syncs with music, displays logos in the crowd and enhances engagement.",
+    desc: "A durable, stylish bracelet with a nylon strap and quick-release buckle—perfect for events and group activities. Offers bright, customizable LED lighting and is available as either rechargeable or single-use.",
     image: Lanyard,
     tagColor: "bg-blue-900",
     tagText: "text-blue-300",
-    path: "#led-lanyard",
+    path: "#led-nylon",
   },
   {
     id: 3,
     tag: "Sustainable Solution",
     title: "Rechargeable Bracelet",
-    desc: "Our rechargeable bracelets offer the benefits of our regular LED bracelets designed for repeated use.",
+    desc: "Eco-friendly and built to last, these rechargeable bracelets offer dynamic lighting with sustainable impact. Perfect for multi-day or green-focused events.",
     image: RecharchableBrace,
     tagColor: "bg-blue-900",
     tagText: "text-blue-300",
@@ -48,7 +48,7 @@ const products = [
     id: 4,
     tag: "Event Essentials",
     title: "Smart Tag",
-    desc: "Streamline your event with our NFC smart tag—perfect for contactless payments, access control, and digital ticketing. Ideal for festivals, expos, and conferences.",
+    desc: "Powered by NFC/RFID, this sleek tag enables cashless payments, ticket scans, and access control in one. Replace paper tickets with seamless, secure tech.",
     image: SmartTag,
     tagColor: "bg-blue-900",
     tagText: "text-blue-300",
@@ -58,7 +58,7 @@ const products = [
     id: 5,
     tag: "Eco-Friendly Glow",
     title: "Led-Ball",
-    desc: "Brighten your brand with a rechargeable LED wristband. Built for multi-day events and eco-conscious organizers who value sustainability and style.",
+    desc: "Sustainable and reusable, the LED Ball delivers vibrant lighting with minimal environmental impact. Ideal for multi-day events or eco-conscious brands.",
     image: Ball,
     tagColor: "bg-blue-900",
     tagText: "text-blue-300",
@@ -94,7 +94,7 @@ const ProductsPreview: React.FC = () => {
         <div className="mb-6 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div className="text-center md:text-left">
             <h2 className="text-3xl md:text-4xl font-bold mb-1">
-              Our products
+              Our Products
             </h2>
             <p className="text-lg text-gray-500">
               Wearable Tech That Connects and Impresses
