@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import NeonButton from "./NeonButton";
 import LetsLinkVideo from "../assets/LetsLink.mp4";
 
 const CTABlock: React.FC = () => {
@@ -30,12 +31,13 @@ const CTABlock: React.FC = () => {
           <br />
           Seamless Connections and Smart Technology
         </h1>
-        <Link
+        <NeonButton
           to="/Contact#contact"
-          className="px-8 py-4 bg-white/20 hover:bg-white/30 text-white font-semibold rounded-full backdrop-blur-md border border-white transition-all duration-200 text-lg shadow"
+          LinkComponent={Link}
+          className="px-8 py-4 text-white font-semibold rounded-fulltransition-all duration-200 text-lg"
         >
           Get a free quote &rarr;
-        </Link>
+        </NeonButton>
       </div>
       {/* Extra donker overlay voor contrast */}
       <div className="absolute inset-0 bg-black/30"></div>

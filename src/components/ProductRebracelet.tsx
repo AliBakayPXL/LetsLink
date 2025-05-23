@@ -1,5 +1,5 @@
 import React from "react";
-import ReBracelet from "../assets/recharchable.webp";
+import ReBracelet from "../assets/photos/productrebracelet.webp";
 
 const ProductSmartTag: React.FC = () => {
   return (
