@@ -1,6 +1,7 @@
 import { useState, useCallback, memo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import LogoPrimary from "../assets/logo.webp";
+import NeonButton from "./NeonButton";
 
 interface MenuItem {
   label: string;
@@ -196,12 +197,13 @@ const Navbar = () => {
           </ul>
 
           {/* Desktop Button */}
-          <Link
-            to="/Contact#contact"
-            className="hidden lg:block bg-white/10 outline-1 outline-white/40 outline-offset-[-1px] px-7 py-2.5 rounded-full transition-all duration-200 hover:bg-[#3CACD2] hover:outline-none hover:text-primary whitespace-nowrap"
+          <NeonButton 
+          to="/Contact#contact" 
+          LinkComponent={Link}
+          className="hidden lg:block"
           >
-            Get a Free Quote
-          </Link>
+          Get a Free Quote
+          </NeonButton>
 
           {/* Mobile Menu Button */}
           <MenuButton isOpen={isSidebarOpen} onClick={toggleSidebar} />
@@ -278,12 +280,13 @@ const Navbar = () => {
                 </li>
               ))}
               <li>
-                <Link
-                  to="/Contact#contact"
-                  className="inline-block bg-white/10 outline-1 outline-white/40 outline-offset-[-1px] px-7 py-2.5 rounded-full transition-all duration-200 hover:bg-[#3CACD2] hover:outline-none hover:text-primary whitespace-nowrap"
-                >
-                  Book a Call
-                </Link>
+              <NeonButton 
+          to="/Contact#contact" 
+          LinkComponent={Link}
+          className="rounded-full"
+          >
+          Get a Free Quote
+          </NeonButton>
               </li>
             </ul>
           </div>
